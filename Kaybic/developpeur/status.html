@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surveillez en temps réel le statut des APIs KAYBIC AFRICA. Uptime, performance et incidents pour PayIn, PayOut et Transfer APIs.">
+    <meta name="keywords" content="paiement mobile, API, Afrique, Orange Money, MTN, Moov, Wave, fintech">
+    <meta name="author" content="KAYBIC AFRICA">
+      <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#7c3aed">
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7c3aed">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link href="../assets/libs/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    
+    
+    
+    <title>Statut API | KAYBIC AFRICA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h3 class="text-primary mb-0">KAYBIC AFRICA</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                                <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                                <li><a class="dropdown-item" href="../produits/transfert.html">Transfer API</a></li>
+                                <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                                <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Développeurs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../developpeur/overview.html">Vue d'ensemble</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/docs.html">Documentation</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/integrations.html">Intégrations</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/community.html">Communauté</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/status.html">Statut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../support/faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="../support/support.html">Centre d'aide</a></li>
+                                <li><a class="dropdown-item" href="../support/help.html">Aide</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                À propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../apropos/about.html">À propos</a></li>
+                                <li><a class="dropdown-item" href="../apropos/careers.html">Carrières</a></li>
+                                <li><a class="dropdown-item" href="../apropos/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../apropos/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-outline-primary me-2">Connexion</a>
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <!-- Navigation -->
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="bi bi-activity me-3"></i>Statut des APIs KAYBIC
+                    </h1>
+                    <p class="lead mb-4">
+                        Surveillez en temps réel la disponibilité et les performances de nos services. 
+                        Toutes les informations sur l'uptime, les incidents et la maintenance.
+                    </p>
+                    <div class="status-indicator d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill text-success fs-3 me-3"></i>
+                        <div>
+                            <h5 class="mb-0">Tous les systèmes opérationnels</h5>
+                            <small class="opacity-75">Dernière mise à jour : il y a 2 minutes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="overall-status bg-white bg-opacity-10 rounded-3 p-4">
+                        <h3 class="fw-bold text-success">99.97%</h3>
+                        <p class="mb-2">Uptime Global</p>
+                        <h4 class="fw-bold">< 150ms</h4>
+                        <p class="mb-0">Latence Moyenne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Status -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Statut Actuel des Services</h2>
+                <p class="lead text-muted">État en temps réel de tous nos services et APIs</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h5 class="card-title mb-0">PayIn API</h5>
+                                <span class="badge bg-success fs-6">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Opérationnel
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Uptime (30 jours)</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-success">99.98%</span>
+                                    <small class="text-muted">7h 12m de downtime</small>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 99.98%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Temps de réponse moyen</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-primary">127ms</span>
+                                    <small class="text-success">
+                                        <i class="bi bi-arrow-down"></i>-5ms depuis hier
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between text-sm">
+                                <span>Dernière vérification:</span>
+                                <span class="text-success">il y a 1 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h5 class="card-title mb-0">PayOut API</h5>
+                                <span class="badge bg-success fs-6">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Opérationnel
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Uptime (30 jours)</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-success">99.95%</span>
+                                    <small class="text-muted">10h 48m de downtime</small>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 99.95%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Temps de réponse moyen</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-primary">145ms</span>
+                                    <small class="text-warning">
+                                        <i class="bi bi-arrow-up"></i>+8ms depuis hier
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between text-sm">
+                                <span>Dernière vérification:</span>
+                                <span class="text-success">il y a 1 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h5 class="card-title mb-0">Transfer API</h5>
+                                <span class="badge bg-success fs-6">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Opérationnel
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Uptime (30 jours)</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-success">99.99%</span>
+                                    <small class="text-muted">2h 24m de downtime</small>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 99.99%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted">Temps de réponse moyen</small>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-bold text-primary">189ms</span>
+                                    <small class="text-success">
+                                        <i class="bi bi-arrow-down"></i>-12ms depuis hier
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between text-sm">
+                                <span>Dernière vérification:</span>
+                                <span class="text-success">il y a 1 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastructure Status -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-hdd-network me-2"></i>Statut Infrastructure
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-cloud-check-fill text-success fs-3 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">API Gateway</h6>
+                                            <small class="text-success">Opérationnel</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-database-fill-check text-success fs-3 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Base de Données</h6>
+                                            <small class="text-success">Opérationnel</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-shield-check text-success fs-3 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Sécurité</h6>
+                                            <small class="text-success">Opérationnel</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-bell-fill text-success fs-3 me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Webhooks</h6>
+                                            <small class="text-success">Opérationnel</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Charts -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Métriques de Performance</h2>
+                <p class="lead text-muted">Évolution des performances sur les 7 derniers jours</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-speedometer2 me-2"></i>Temps de Réponse (7 jours)
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="responseTimeChart" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-graph-up me-2"></i>Volume de Requêtes (7 jours)
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="requestVolumeChart" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uptime History -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Historique Uptime</h2>
+                <p class="lead text-muted">Disponibilité quotidienne sur les 90 derniers jours</p>
+            </div>
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="uptime-calendar">
+                        <!-- Légende -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6 class="mb-0">90 derniers jours</h6>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="uptime-box bg-success me-2"></div>
+                                    <small>99-100%</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="uptime-box bg-warning me-2"></div>
+                                    <small>95-99%</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="uptime-box bg-danger me-2"></div>
+                                    <small>< 95%</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="uptime-box bg-secondary me-2"></div>
+                                    <small>Maintenance</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Calendrier de disponibilité -->
+                        <div class="uptime-grid">
+                            <!-- PayIn API -->
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <strong class="me-3" style="min-width: 100px;">PayIn API</strong>
+                                    <div class="d-flex gap-1 flex-wrap" id="payinUptimeGrid">
+                                        <!-- Generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- PayOut API -->
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <strong class="me-3" style="min-width: 100px;">PayOut API</strong>
+                                    <div class="d-flex gap-1 flex-wrap" id="payoutUptimeGrid">
+                                        <!-- Generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transfer API -->
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <strong class="me-3" style="min-width: 100px;">Transfer API</strong>
+                                    <div class="d-flex gap-1 flex-wrap" id="transferUptimeGrid">
+                                        <!-- Generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incidents -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Incidents Récents</h2>
+                <p class="lead text-muted">Historique des incidents et maintenances</p>
+            </div>
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h6 class="fw-bold mb-0">Incident résolu - Latence élevée PayOut API</h6>
+                                    <span class="badge bg-success">Résolu</span>
+                                </div>
+                                <p class="text-muted mb-2">
+                                    Nous avons observé une latence élevée sur l'API PayOut entre 14h30 et 15h45. 
+                                    Le problème a été identifié et résolu par l'équipe infrastructure.
+                                </p>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>15 Janvier 2024, 15:45 GMT
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-clock me-1"></i>Durée: 1h 15m
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h6 class="fw-bold mb-0">Maintenance programmée - Upgrade base de données</h6>
+                                    <span class="badge bg-info">Terminé</span>
+                                </div>
+                                <p class="text-muted mb-2">
+                                    Maintenance programmée pour la mise à niveau de notre infrastructure de base de données. 
+                                    Brève indisponibilité de 5 minutes sur tous les services.
+                                </p>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>12 Janvier 2024, 02:00 GMT
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-clock me-1"></i>Durée: 15m
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h6 class="fw-bold mb-0">Investigation - Taux d'erreur 5xx élevé</h6>
+                                    <span class="badge bg-success">Résolu</span>
+                                </div>
+                                <p class="text-muted mb-2">
+                                    Augmentation temporaire du taux d'erreurs 5xx sur l'API PayIn. 
+                                    Problème lié à un déploiement, rollback effectué avec succès.
+                                </p>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>08 Janvier 2024, 10:30 GMT
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-clock me-1"></i>Durée: 28m
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-secondary"></div>
+                            <div class="timeline-content">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h6 class="fw-bold mb-0">Amélioration des performances</h6>
+                                    <span class="badge bg-secondary">Déployé</span>
+                                </div>
+                                <p class="text-muted mb-2">
+                                    Déploiement d'optimisations de performance pour réduire la latence moyenne 
+                                    de 20% sur toutes les APIs.
+                                </p>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>05 Janvier 2024, 14:00 GMT
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-clock me-1"></i>Déploiement sans interruption
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe to Updates -->
+    <section class="py-5 bg-gradient-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Restez Informé</h2>
+            <p class="lead mb-4">
+                Recevez des notifications en temps réel sur l'état de nos services et 
+                les maintenances programmées.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control form-control-lg" placeholder="Votre email..." aria-label="Email">
+                        <button class="btn btn-warning btn-lg" type="button">
+                            <i class="bi bi-bell me-2"></i>S'abonner
+                        </button>
+                    </div>
+                    <small class="opacity-75">
+                        Vous pouvez aussi suivre notre statut via 
+                        <a href="#" class="text-warning">RSS</a> ou 
+                        <a href="#" class="text-warning">API</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <!-- Bootstrap JS -->
+    
+    
+    <!-- Swiper JS CDN -->
+    
+    
+    <!-- GLightbox JS CDN -->
+    
+    
+    <!-- ScrollCue JS CDN -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <h3 class="text-white mb-3">KAYBIC AFRICA</h3>
+                        <p class="text-white-50 mb-4">
+                            La plateforme d'agrégation de paiement mobile la plus fiable en Afrique francophone. 
+                            Connectez votre entreprise à tous les opérateurs de paiement mobile en une seule intégration.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Produits</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../produits/payin.html" class="text-white-50">PayIn API</a></li>
+                        <li class="mb-2"><a href="../produits/payout.html" class="text-white-50">PayOut API</a></li>
+                        <li class="mb-2"><a href="../produits/transfert.html" class="text-white-50">Transfer API</a></li>
+                        <li class="mb-2"><a href="../produits/solutions.html" class="text-white-50">Solutions</a></li>
+                        <li class="mb-2"><a href="../produits/tarifs.html" class="text-white-50">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Développeurs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../developpeur/overview.html" class="text-white-50">Vue d'ensemble</a></li>
+                        <li class="mb-2"><a href="../developpeur/docs.html" class="text-white-50">Documentation</a></li>
+                        <li class="mb-2"><a href="../developpeur/integrations.html" class="text-white-50">Intégrations</a></li>
+                        <li class="mb-2"><a href="../developpeur/community.html" class="text-white-50">Communauté</a></li>
+                        <li class="mb-2"><a href="../developpeur/status.html" class="text-white-50">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../support/faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="../support/support.html" class="text-white-50">Centre d'aide</a></li>
+                        <li class="mb-2"><a href="../support/help.html" class="text-white-50">Aide</a></li>
+                        <li class="mb-2"><a href="../apropos/about.html" class="text-white-50">À propos</a></li>
+                        <li class="mb-2"><a href="../apropos/contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Restez informé de nos dernières actualités</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        © <span id="currentYear">2025</span> KAYBIC AFRICA. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-white-50 me-3">Conditions d'utilisation</a>
+                    <a href="#" class="text-white-50">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Libs JS -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendors/swiper.js"></script>
+   
+</body>
+</html>

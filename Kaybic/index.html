@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="KAYBIC AFRICA - Plateforme d'agrégation de paiement mobile en Afrique francophone. APIs sécurisées pour encaissement, décaissement et transferts.">
+    <meta name="keywords" content="paiement mobile, Afrique, API, mobile money, KAYBIC AFRICA">
+    <meta name="author" content="KAYBIC AFRICA">
+    
+    <!-- Favicon icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon/site.html" />
+    <link rel="mask-icon" href="assets/images/favicon/block-safari-pinned-tab.svg" color="#8b3dff" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#8b3dff" />
+    <meta name="msapplication-config" content="assets/images/favicon/tile.xml" />
+
+    <!-- Color modes -->
+    <script src="assets/js/vendors/color-modes.js"></script>
+
+    <!-- Libs CSS -->
+    <link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- Scroll Cue -->
+    <link rel="stylesheet" href="assets/libs/scrollcue/scrollCue.css" />
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="assets/fonts/css/boxicons.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    
+    
+    
+    <title>Accueil | KAYBIC AFRICA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h3 class="text-primary mb-0">KAYBIC AFRICA</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="produits/payin.html">PayIn API</a></li>
+                                <li><a class="dropdown-item" href="produits/payout.html">PayOut API</a></li>
+                                <li><a class="dropdown-item" href="produits/transfert.html">Transfer API</a></li>
+                                <li><a class="dropdown-item" href="produits/solutions.html">Solutions Métiers</a></li>
+                                <li><a class="dropdown-item" href="produits/tarifs.html">Tarifs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Développeurs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="developpeur/overview.html">Vue d'ensemble</a></li>
+                                <li><a class="dropdown-item" href="developpeur/docs.html">Documentation</a></li>
+                                <li><a class="dropdown-item" href="developpeur/integrations.html">Intégrations</a></li>
+                                <li><a class="dropdown-item" href="developpeur/community.html">Communauté</a></li>
+                                <li><a class="dropdown-item" href="developpeur/status.html">Statut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="support/faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="support/support.html">Centre d'aide</a></li>
+                                <li><a class="dropdown-item" href="support/help.html">Aide</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                À propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="apropos/about.html">À propos</a></li>
+                                <li><a class="dropdown-item" href="apropos/careers.html">Carrières</a></li>
+                                <li><a class="dropdown-item" href="apropos/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="apropos/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-outline-primary me-2">Connexion</a>
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main >
+        <!--Hero start-->
+         <section id="accueil" class="bg-primary-dark pt-9 right-slant-shape" data-cue="fadeIn">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-5 col-12">
+                     <div class="text-center text-lg-start mb-7 mb-lg-0" data-cues="slideInDown">
+                        <div class="mb-4">                           <h1 class="mb-5 display-5 text-white-stable">
+                              Agrégateur de paiement mobile pour
+                              <span class="text-pattern-line text-warning">l'Afrique de l'Ouest</span>
+                           </h1>
+                           <p class="mb-0 text-white-stable lead">Connectez-vous à Orange Money, MTN Mobile Money, Moov Money et Wave avec une seule API. Simplifiez vos paiements mobiles dans 8 pays de la CEDEAO.</p>
+                        </div>
+                        <div data-cues="slideInDown">
+                           <a href="#produits" class="btn btn-primary me-2">Découvrir nos APIs</a>
+                           <a href="#contact" class="btn btn-outline-warning">Nous contacter</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offset-lg-1 col-lg-6 col-12">
+                     <div class="position-relative z-1 pt-lg-9" data-cue="slideInRight">
+                        <div class="position-relative">
+                           <img src="assets/images/landings/finance/finance-hero-side-img.jpg" alt="KAYBIC AFRICA - Solutions mobile money" class="img-fluid rounded-3" width="837" />
+                           <a
+                              href="#"
+                              class="play-btn position-absolute top-50 start-50 translate-middle icon-shape icon-xl rounded-circle text-primary">
+                              <i class="bi bi-play-fill"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Hero end-->
+
+         <!--Featured in start-->
+         <div class="my-xl-9 my-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10 offset-lg-1 col-12" data-cue="fadeIn">
+                     <div class="text-center mb-4 mb-lg-7">
+                        <small class="text-uppercase fw-semibold ls-md">Nos opérateurs partenaires</small>
+                     </div>
+
+                     <div
+                        class="swiper-container swiper"
+                        id="swiper-1"
+                        data-pagination-type=""
+                        data-speed="400"
+                        data-space-between="100"
+                        data-pagination="true"
+                        data-navigation="false"
+                        data-autoplay="true"
+                        data-autoplay-delay="3000"
+                        data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 4}}'>
+                        <div class="swiper-wrapper pb-6">
+                           <div class="swiper-slide">
+                              <figure class="text-center">
+                                 <div class="bg-warning text-dark py-3 px-4 rounded fw-bold">Orange Money</div>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure class="text-center">
+                                 <div class="bg-warning text-dark py-3 px-4 rounded fw-bold">MTN Mobile Money</div>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure class="text-center">
+                                 <div class="bg-primary text-white py-3 px-4 rounded fw-bold">Moov Money</div>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure class="text-center">
+                                 <div class="bg-info text-white py-3 px-4 rounded fw-bold">Wave</div>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure class="text-center">
+                                 <div class="bg-success text-white py-3 px-4 rounded fw-bold">Wizall Money</div>
+                              </figure>
+                           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                           <div class="swiper-button-next"></div>
+                           <div class="swiper-button-prev"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Featured in end-->
+
+         <!--Nos APIs start-->
+         <section id="produits" class="my-xl-9 my-5">
+            <div class="container" data-cue="fadeIn">
+               <div class="row">
+                  <div class="col-xl-8 offset-xl-2">                     <div class="text-center mb-xl-7 mb-5">
+                        <h2 class="mb-3">
+                           Une API unifiée pour
+                           <span class="text-primary">tous les opérateurs Mobile Money.</span>
+                        </h2>
+                        <p class="mb-0">Intégrez Orange Money, MTN Mobile Money, Moov Money et Wave avec une seule connexion. Simplifiez vos développements et réduisez vos coûts d'intégration.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-responsive-lg">
+                  <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
+                     <div class="col-lg-4 col-md-6" data-cue="zoomIn">
+                        <div class="card border-0 card-primary">
+                           <div class="card-body p-5">
+                              <div class="position-relative d-inline-block mb-5">
+                                 <img src="assets/images/landings/finance/feature-img-1.jpg" alt="API Encaissement" class="avatar avatar-xl rounded-circle border-2 border border-white shadow-sm" />
+
+                                 <div class="position-absolute bottom-0 end-0">
+                                    <div class="icon-md icon-shape rounded-circle bg-white me-n2 mb-n2 shadow-sm">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-credit-card text-primary" viewBox="0 0 16 16">
+                                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                          <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>                              <div class="mb-5">
+                                 <h4 class="card-title">API d'Encaissement Multi-Opérateurs</h4>
+                                 <p class="mb-0 card-text">Collectez les paiements de vos clients via Orange Money, MTN Mobile Money, Moov Money et Wave avec une seule intégration.</p>
+                              </div>
+
+                              <a href="#!" class="icon-link icon-link-hover card-link">
+                                 Découvrir l'API
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path
+                                       fill-rule="evenodd"
+                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6" data-cue="zoomIn">
+                        <div class="card border-0 card-primary">
+                           <div class="card-body p-5">
+                              <div class="position-relative d-inline-block mb-5">
+                                 <img src="assets/images/landings/finance/feature-img-2.jpg" alt="API Pay-out" class="avatar avatar-xl rounded-circle border-2 border border-white shadow-sm" />
+
+                                 <div class="position-absolute bottom-0 end-0">
+                                    <div class="icon-md icon-shape rounded-circle bg-white me-n2 mb-n2 shadow-sm">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-up-circle text-primary" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>                              <div class="mb-5">
+                                 <h4 class="card-title">API de Décaissement Multi-Opérateurs</h4>
+                                 <p class="mb-0 card-text">Envoyez des fonds instantanément vers tous les portefeuilles mobile money de la sous-région avec un seul appel API.</p>
+                              </div>
+
+                              <a href="#!" class="icon-link icon-link-hover card-link">
+                                 Découvrir l'API
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path
+                                       fill-rule="evenodd"
+                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6" data-cue="zoomIn">
+                        <div class="card border-0 card-primary">
+                           <div class="card-body p-5">
+                              <div class="position-relative d-inline-block mb-5">
+                                 <img src="assets/images/landings/finance/feature-img-3.jpg" alt="API Transferts" class="avatar avatar-xl rounded-circle border-2 border border-white shadow-sm" />
+
+                                 <div class="position-absolute bottom-0 end-0">
+                                    <div class="icon-md icon-shape rounded-circle bg-white me-n2 mb-n2 shadow-sm">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-globe text-primary" viewBox="0 0 16 16">
+                                          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>                              <div class="mb-5">
+                                 <h4 class="card-title">API de Transferts CEDEAO</h4>
+                                 <p class="mb-0 card-text">Facilitez les transferts d'argent entre pays de la CEDEAO avec nos connexions directes multi-opérateurs et multi-devises.</p>
+                              </div>
+
+                              <a href="#!" class="icon-link icon-link-hover card-link">
+                                 Découvrir l'API
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path
+                                       fill-rule="evenodd"
+                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-6" data-cue="fadeIn">
+                  <div class="col-xl-10 offset-xl-1">
+                     <ul class="list-inline">
+                        <li class="list-inline-item d-inline-flex align-items-center me-3 mb-2 mb-lg-0">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                              <path
+                                 d="M16 8A8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                           </svg>
+                           <span class="ms-2">Surveillance 24/7 des transactions</span>
+                        </li>
+                        <li class="list-inline-item d-inline-flex align-items-center me-3 mb-2 mb-lg-0">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                              <path
+                                 d="M16 8A8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                           </svg>
+                           <span class="ms-2 me-3">Sécurité et conformité</span>
+                        </li>
+                        <li class="list-inline-item d-inline-flex align-items-center me-3 mb-2 mb-lg-0">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                              <path
+                                 d="M16 8A8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                           </svg>
+                           <span class="ms-2">Support technique dédié</span>
+                        </li>
+                        <li class="list-inline-item d-inline-flex align-items-center me-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                              <path
+                                 d="M16 8A8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                           </svg>
+                           <span class="ms-2">Intégration rapide</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Nos APIs end-->
+
+         <!--Statistiques start-->
+         <section id="solutions" class="py-xl-9 py-5 bg-primary-dark">
+            <div class="container" data-cue="fadeIn">
+               <div class="row">                  <div class="col-xl-8 offset-xl-2 col-12">
+                     <div class="text-center mb-xl-7 mb-5">
+                        <h2 class="text-white-stable mb-3">Pourquoi 500+ entreprises choisissent KAYBIC AFRICA ?</h2>
+                        <p class="mb-0 text-white-50">
+                           Le seul agrégateur qui connecte TOUS les opérateurs Mobile Money de l'Afrique de l'Ouest avec des APIs standardisées et une infrastructure haute disponibilité.
+                        </p>
+                     </div>
+                  </div>
+               </div>               <div class="row mb-7 pb-4 g-5 text-center text-lg-start">
+                  <div class="col-md-4" data-cue="fadeIn">
+                     <h4 class="text-white-stable">Agrégation complète</h4>
+                     <p class="text-white-50 mb-0">Une seule API pour Orange Money, MTN Mobile Money, Moov Money, Wave et tous les opérateurs de la CEDEAO. Fini les multiples intégrations.</p>
+                  </div>
+                  <div class="col-md-4" data-cue="fadeIn">
+                     <h4 class="text-white-stable">Conformité BCEAO</h4>
+                     <p class="text-white-50 mb-0">Plateforme agréée et conforme aux réglementations de la Banque Centrale des États de l'Afrique de l'Ouest avec KYC automatisé.</p>
+                  </div>
+                  <div class="col-md-4" data-cue="fadeIn">
+                     <h4 class="text-white-stable">Support multi-devises</h4>
+                     <p class="text-white-50 mb-0">Transactions en FCFA, gestion automatique des taux de change et réconciliation comptable pour tous vos flux financiers.</p>
+                  </div>
+               </div>               <div class="row border-primary border-top g-5 g-lg-0 text-center text-lg-start" data-cue="fadeIn">
+                  <div class="col-lg-3 col-6 border-end-lg border-md-0 border-lg-primary" data-cue="fadeIn">
+                     <div class="p-lg-5">
+                        <h5 class="h1 text-white-stable mb-0">8</h5>
+                        <span class="text-white-50">Pays CEDEAO couverts</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-6 border-end-lg border-md-0 border-lg-primary" data-cue="fadeIn">
+                     <div class="p-lg-5">
+                        <h5 class="h1 text-white-stable mb-0">99.5%</h5>
+                        <span class="text-white-50">Taux de succès</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-6 border-end-lg border-md-0 border-lg-primary" data-cue="fadeIn">
+                     <div class="p-lg-5">
+                        <h5 class="h1 text-white-stable mb-0">15</h5>
+                        <span class="text-white-50">Opérateurs connectés</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-6" data-cue="fadeIn">
+                     <div class="p-lg-5">
+                        <h5 class="h1 text-white-stable mb-0">2M+</h5>
+                        <span >Transactions mensuelles</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Statistiques end-->
+
+         <!--À propos start-->
+         <section id="apropos" class="my-xl-9 my-5">
+            <div class="container">
+               <div class="row">                  <div class="col-lg-8 offset-lg-2">
+                     <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                        <h2 class="mb-3">
+                           Des solutions adaptées à
+                           <span class="text-primary">l'écosystème africain.</span>
+                        </h2>
+                        <p class="mb-0">De la startup tech aux institutions financières, KAYBIC AFRICA propulse la digitalisation des paiements en Afrique de l'Ouest avec des solutions sur-mesure.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row align-items-center">
+                  <div class="col-xl-5 col-md-6 col-12">
+                     <div class="nav flex-column nav-pills mb-5 mb-lg-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a
+                           href="#"
+                           class="nav-link active d-flex text-start align-items-center align-items-lg-start p-xl-4 p-3"
+                           id="v-pills-startup-tab"
+                           data-bs-toggle="pill"
+                           data-bs-target="#v-pills-startup"
+                           role="tab"
+                           aria-controls="v-pills-startup"
+                           aria-selected="true">
+                           <div class="d-flex">
+                              <div class="icon-md icon-shape rounded-circle bg-white shadow-sm">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-rocket text-primary" viewBox="0 0 16 16">
+                                    <path d="M8 0c-2.4 0-4.8.9-6.6 2.7A9.21 9.21 0 0 0 0 8a9 9 0 0 0 1.4 5.3c.9 1.5 2.5 2.7 4.6 2.7s3.7-1.2 4.6-2.7A9 9 0 0 0 16 8a9.21 9.21 0 0 0-1.4-5.3C12.8.9 10.4 0 8 0zm3.5 7.5a.5.5 0 0 1-.5.5H8.5v2.5a.5.5 0 0 1-1 0V8H5a.5.5 0 0 1 0-1h2.5V4.5a.5.5 0 0 1 1 0V7H11a.5.5 0 0 1 .5.5z"/>
+                                 </svg>
+                              </div>
+                           </div>                           <div class="ms-4">
+                              <h4 class="mb-0">Pour les startups & PME</h4>
+                              <p class="mb-0 mt-lg-3 d-none d-lg-block">Intégrez rapidement le Mobile Money avec nos APIs simples, des tarifs dégressifs et un accompagnement technique pour digitaliser vos services.</p>
+                           </div>
+                        </a>
+                        <a
+                           href="#"
+                           class="nav-link d-flex text-start align-items-center align-items-lg-start p-xl-4 p-3"
+                           id="v-pills-enterprise-tab"
+                           data-bs-toggle="pill"
+                           data-bs-target="#v-pills-enterprise"
+                           role="tab"
+                           aria-controls="v-pills-enterprise"
+                           aria-selected="false">
+                           <div class="d-flex">
+                              <div class="icon-md icon-shape rounded-circle bg-white shadow-sm">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-building text-primary" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                                 </svg>
+                              </div>
+                           </div>                           <div class="ms-4">
+                              <h4 class="mb-0">Pour les grandes entreprises</h4>
+                              <p class="mb-0 mt-lg-3 d-none d-lg-block">Infrastructure dédiée, SLA garantis et conformité bancaire pour les volumes importants. Connectez vos systèmes ERP et comptables facilement.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 offset-xl-1 col-md-6 col-12">
+                     <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-startup" role="tabpanel" aria-labelledby="v-pills-startup-tab">
+                           <div class="mb-4" data-cue="slideInRight">
+                              <img src="assets/images/landings/finance/finance-hero-side-img.jpg" alt="Solutions pour startups" class="img-fluid rounded-3" />
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-enterprise" role="tabpanel" aria-labelledby="v-pills-enterprise-tab">
+                           <div class="mb-4" data-cue="slideInRight">
+                              <img src="assets/images/landings/finance/finance-hero-side-img.jpg" alt="Solutions pour entreprises" class="img-fluid rounded-3" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--À propos end-->
+
+         <!--Contact CTA start-->
+         <section id="contact" class="py-xl-9 py-5 bg-light">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 offset-lg-2">                     <div class="text-center mb-5" data-cue="fadeIn">
+                        <h2 class="mb-3">Démarrez votre intégration Mobile Money</h2>
+                        <p class="mb-4 text-body-secondary">Rejoignez l'écosystème KAYBIC AFRICA et accédez à tous les opérateurs Mobile Money d'Afrique de l'Ouest en moins de 48h.</p>                        <div>
+                           <a href="developpeur/overview.html" class="btn btn-primary btn-lg me-3">Tester nos APIs</a>
+                           <a href="mailto:integration@kaybic-africa.com" class="btn btn-outline-primary btn-lg">Assistance technique</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-7">
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                     <div class="text-center">
+                        <div class="icon-shape icon-lg rounded-circle bg-primary text-white mb-3 mx-auto">
+                           <i class="bi bi-envelope"></i>
+                        </div>                        <h5>Support technique</h5>
+                        <p class="text-body-secondary">support@kaybic-africa.com</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                     <div class="text-center">
+                        <div class="icon-shape icon-lg rounded-circle bg-primary text-white mb-3 mx-auto">
+                           <i class="bi bi-telephone"></i>
+                        </div>
+                        <h5>Téléphone</h5>
+                        <p class="text-body-secondary">+226 XX XX XX XX</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="text-center">
+                        <div class="icon-shape icon-lg rounded-circle bg-primary text-white mb-3 mx-auto">
+                           <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h5>Adresse</h5>
+                        <p class="text-body-secondary">Ouagadougou, Burkina Faso</p>
+                     </div>
+                  </div>
+               </div>
+            </div>         </section>
+         <!--Contact CTA end-->
+
+         <!--Avantages techniques start-->
+         <section class="my-xl-9 my-5">
+            <div class="container" data-cue="fadeIn">
+               <div class="row">
+                  <div class="col-xl-8 offset-xl-2">
+                     <div class="text-center mb-xl-7 mb-5">
+                        <h2 class="mb-3">
+                           Pourquoi choisir notre
+                           <span class="text-primary">plateforme d'agrégation</span> ?
+                        </h2>
+                        <p class="mb-0">KAYBIC AFRICA simplifie l'intégration des paiements mobiles en Afrique de l'Ouest grâce à une approche technique unifiée.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-6" data-cue="slideInLeft">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                           <div class="icon-shape icon-lg rounded-circle bg-primary text-white mb-4">
+                              <i class="bi bi-diagram-3"></i>
+                           </div>
+                           <h4 class="card-title">Intégration unique</h4>
+                           <p class="card-text text-muted">
+                              Une seule API pour connecter tous les opérateurs Mobile Money de la région. 
+                              Économisez des mois de développement et de négociation avec chaque opérateur.
+                           </p>
+                           <ul class="list-unstyled text-muted">
+                              <li><i class="bi bi-check-circle text-success me-2"></i>SDK prêt à l'emploi</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Documentation complète</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Support technique dédié</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-cue="slideInRight">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                           <div class="icon-shape icon-lg rounded-circle bg-success text-white mb-4">
+                              <i class="bi bi-shield-check"></i>
+                           </div>
+                           <h4 class="card-title">Gestion intelligente des échecs</h4>
+                           <p class="card-text text-muted">
+                              Notre système détecte automatiquement les pannes d'opérateurs et redirige les transactions 
+                              vers des routes alternatives pour garantir un taux de succès optimal.
+                           </p>
+                           <ul class="list-unstyled text-muted">
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Routage intelligent</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Retry automatique</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>99,5% de disponibilité</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-cue="slideInLeft">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                           <div class="icon-shape icon-lg rounded-circle bg-warning text-white mb-4">
+                              <i class="bi bi-graph-up"></i>
+                           </div>
+                           <h4 class="card-title">Monitoring unifié</h4>
+                           <p class="card-text text-muted">
+                              Tableau de bord centralisé pour suivre toutes vos transactions en temps réel, 
+                              quel que soit l'opérateur Mobile Money utilisé.
+                           </p>
+                           <ul class="list-unstyled text-muted">
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Analytics en temps réel</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Rapports détaillés</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Alertes automatiques</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-cue="slideInRight">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-5">
+                           <div class="icon-shape icon-lg rounded-circle bg-info text-white mb-4">
+                              <i class="bi bi-calculator"></i>
+                           </div>
+                           <h4 class="card-title">Réconciliation automatique</h4>
+                           <p class="card-text text-muted">
+                              Simplifiez votre comptabilité avec notre système de réconciliation automatique 
+                              qui consolide toutes les transactions de tous les opérateurs.
+                           </p>
+                           <ul class="list-unstyled text-muted">
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Rapprochement automatique</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Exports compatibles ERP</li>
+                              <li><i class="bi bi-check-circle text-success me-2"></i>Audit trail complet</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-6">
+                  <div class="col-lg-8 offset-lg-2 text-center">
+                     <div class="alert alert-light border border-primary" role="alert">
+                        <i class="bi bi-lightbulb text-primary me-2"></i>
+                        <strong>Innovation continue :</strong> Notre équipe développe constamment de nouvelles fonctionnalités pour optimiser vos paiements mobiles et réduire vos coûts opérationnels.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Avantages techniques end-->
+
+         <!--Couverture géographique start-->
+         <section class="my-xl-9 my-5 bg-light">
+            <div class="container" data-cue="fadeIn">
+               <div class="row">
+                  <div class="col-xl-8 offset-xl-2">
+                     <div class="text-center mb-xl-7 mb-5">
+                        <h2 class="mb-3">
+                           Couverture complète de
+                           <span class="text-primary">l'Afrique de l'Ouest</span>
+                        </h2>
+                        <p class="mb-0">Nous connectons 8 pays de la CEDEAO avec tous leurs opérateurs Mobile Money majeurs pour une couverture régionale optimale.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇧🇫</div>
+                           <h5 class="card-title">Burkina Faso</h5>
+                           <p class="card-text text-muted small">Orange Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇸🇳</div>
+                           <h5 class="card-title">Sénégal</h5>
+                           <p class="card-text text-muted small">Orange Money, Wave, Free Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇨🇮</div>
+                           <h5 class="card-title">Côte d'Ivoire</h5>
+                           <p class="card-text text-muted small">Orange Money, MTN Mobile Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇲🇱</div>
+                           <h5 class="card-title">Mali</h5>
+                           <p class="card-text text-muted small">Orange Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇳🇪</div>
+                           <h5 class="card-title">Niger</h5>
+                           <p class="card-text text-muted small">Orange Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇬🇭</div>
+                           <h5 class="card-title">Ghana</h5>
+                           <p class="card-text text-muted small">MTN Mobile Money, AirtelTigo Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇹🇬</div>
+                           <h5 class="card-title">Togo</h5>
+                           <p class="card-text text-muted small">T-Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                           <div class="flag-icon mb-3">🇧🇯</div>
+                           <h5 class="card-title">Bénin</h5>
+                           <p class="card-text text-muted small">MTN Mobile Money, Moov Money</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-6">
+                  <div class="col-lg-8 offset-lg-2 text-center">
+                     <div class="alert alert-primary" role="alert">
+                        <i class="bi bi-info-circle me-2"></i>
+                        <strong>Expansion continue :</strong> Nous ajoutons régulièrement de nouveaux pays et opérateurs à notre réseau pour étendre votre portée commerciale.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Couverture géographique end-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <h3 class=" mb-3">KAYBIC AFRICA</h3>
+                        <p class="mb-4">
+                            La plateforme d'agrégation de paiement mobile la plus fiable en Afrique francophone. 
+                            Connectez votre entreprise à tous les opérateurs de paiement mobile en une seule intégration.
+                        </p>                        <div class="d-flex gap-2">
+                            <a href="https://facebook.com/kaybicafrica" class="social-icon text-white" target="_blank" rel="noopener">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/kaybicafrica" class="social-icon text-white" target="_blank" rel="noopener">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/kaybicafrica" class="social-icon text-white" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/kaybicafrica" class="social-icon text-white" target="_blank" rel="noopener">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Produits</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="produits/payin.html" >PayIn API</a></li>
+                        <li class="mb-2"><a href="produits/payout.html" >PayOut API</a></li>
+                        <li class="mb-2"><a href="produits/transfert.html" >Transfer API</a></li>
+                        <li class="mb-2"><a href="produits/solutions.html" class="text-white-50">Solutions</a></li>
+                        <li class="mb-2"><a href="produits/tarifs.html" class="text-white-50">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Développeurs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="developpeur/overview.html" class="text-white-50">Vue d'ensemble</a></li>
+                        <li class="mb-2"><a href="developpeur/docs.html" class="text-white-50">Documentation</a></li>
+                        <li class="mb-2"><a href="developpeur/integrations.html" class="text-white-50">Intégrations</a></li>
+                        <li class="mb-2"><a href="developpeur/community.html" class="text-white-50">Communauté</a></li>
+                        <li class="mb-2"><a href="developpeur/status.html" class="text-white-50">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="support/faq.html" >FAQ</a></li>
+                        <li class="mb-2"><a href="support/support.html" >Centre d'aide</a></li>
+                        <li class="mb-2"><a href="support/help.html" >Aide</a></li>
+                        <li class="mb-2"><a href="apropos/about.html" >À propos</a></li>
+                        <li class="mb-2"><a href="apropos/contact.html" >Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Restez informé de nos dernières actualités</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class=" mb-0">
+                        © <span id="currentYear">2025</span> KAYBIC AFRICA. Tous droits réservés.
+                    </p>
+                </div>                <div class="col-md-6 text-md-end">
+                    <a href="apropos/privacy.html" class="text-white-50 me-3">Politique de confidentialité</a>
+                    <a href="apropos/terms.html" class="text-white-50 me-3">Conditions d'utilisation</a>
+                    <a href="apropos/legal.html" >Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Libs JS -->
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+<!-- Theme JS -->
+<script src="assets/js/theme.min.js"></script>
+
+
+      <script src="assets/libs/scrollcue/scrollCue.min.js"></script>
+      <script src="assets/js/vendors/scrollcue.js"></script>
+      <!--Swiper JS -->
+      <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/js/vendors/swiper.js"></script>
+</body>
+</html>

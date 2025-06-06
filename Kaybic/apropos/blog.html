@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Blog KAYBIC AFRICA : actualités, guides techniques et insights sur les paiements mobiles en Afrique francophone.">
+    <meta name="keywords" content="paiement mobile, Afrique, API, mobile money, KAYBIC AFRICA">
+    <meta name="author" content="KAYBIC AFRICA">    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link rel="stylesheet" href="../assets/libs/boxicons/css/boxicons.min.css">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    
+    <!-- Custom CSS -->
+    
+    <title>Blog | KAYBIC AFRICA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h3 class="text-primary mb-0">KAYBIC AFRICA</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                                <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                                <li><a class="dropdown-item" href="../produits/transfert.html">Transfer API</a></li>
+                                <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                                <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Développeurs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../developpeur/overview.html">Vue d'ensemble</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/docs.html">Documentation</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/integrations.html">Intégrations</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/community.html">Communauté</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/status.html">Statut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../support/faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="../support/support.html">Centre d'aide</a></li>
+                                <li><a class="dropdown-item" href="../support/help.html">Aide</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                À propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../apropos/about.html">À propos</a></li>
+                                <li><a class="dropdown-item" href="../apropos/careers.html">Carrières</a></li>
+                                <li><a class="dropdown-item" href="../apropos/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../apropos/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-outline-primary me-2">Connexion</a>
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Blog KAYBIC AFRICA</h1>
+                    <p class="lead mb-4">
+                        Découvrez les dernières actualités, tendances et insights du secteur fintech africain. 
+                        Restez informé des innovations en matière de paiements mobiles et de services financiers digitaux.
+                    </p>
+                    
+                    <!-- Search Bar -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" placeholder="Rechercher un article..." id="searchInput">
+                                <button class="btn btn-light" type="button" id="searchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="../assets/images/blog-hero.png" alt="Blog" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Categories Filter -->
+                    <div class="mb-4">
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn btn-outline-primary active" data-category="all">Tous</button>
+                            <button class="btn btn-outline-primary" data-category="fintech">Fintech</button>
+                            <button class="btn btn-outline-primary" data-category="mobile-payment">Paiement Mobile</button>
+                            <button class="btn btn-outline-primary" data-category="api">API & Tech</button>
+                            <button class="btn btn-outline-primary" data-category="africa">Afrique</button>
+                            <button class="btn btn-outline-primary" data-category="regulation">Réglementation</button>
+                        </div>
+                    </div>
+
+                    <!-- Featured Article -->
+                    <article class="card mb-5 shadow-sm featured-article">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../assets/images/blog/featured-article.jpg" class="img-fluid h-100 object-cover" alt="Article principal">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body h-100 d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-primary mb-2">Fintech</span>
+                                        <h3 class="card-title">L'avenir des paiements mobiles en Afrique francophone</h3>
+                                        <p class="card-text text-muted">
+                                            Analyse des tendances émergentes et des opportunités de croissance dans l'écosystème 
+                                            fintech africain. Comment les API modernes révolutionnent les services financiers.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 15 Janvier 2024
+                                                <span class="ms-3"><i class="bi bi-person"></i> Équipe KAYBIC</span>
+                                            </small>
+                                            <a href="#" class="btn btn-primary">Lire l'article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Articles Grid -->
+                    <div class="row" id="articlesContainer">
+                        <!-- Article 1 -->
+                        <div class="col-md-6 mb-4" data-category="api">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/api-security.jpg" class="card-img-top" alt="Sécurité API">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-success mb-2">API & Tech</span>
+                                        <h5 class="card-title">Sécuriser vos intégrations API de paiement</h5>
+                                        <p class="card-text">
+                                            Guide complet des meilleures pratiques de sécurité pour protéger vos intégrations 
+                                            API et les données sensibles de vos utilisateurs.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 12 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="col-md-6 mb-4" data-category="mobile-payment">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/mobile-money.jpg" class="card-img-top" alt="Mobile Money">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-warning mb-2">Paiement Mobile</span>
+                                        <h5 class="card-title">L'adoption du mobile money au Sénégal</h5>
+                                        <p class="card-text">
+                                            Étude de cas sur l'évolution du paiement mobile au Sénégal et les facteurs 
+                                            clés de son succès auprès des populations urbaines et rurales.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 10 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 3 -->
+                        <div class="col-md-6 mb-4" data-category="regulation">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/regulation.jpg" class="card-img-top" alt="Réglementation">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-info mb-2">Réglementation</span>
+                                        <h5 class="card-title">Nouvelles réglementations BCEAO 2024</h5>
+                                        <p class="card-text">
+                                            Analyse des nouvelles directives de la BCEAO sur les services de paiement 
+                                            électronique et leur impact sur les fintechs.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 8 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div class="col-md-6 mb-4" data-category="africa">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/digital-transformation.jpg" class="card-img-top" alt="Transformation digitale">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-secondary mb-2">Afrique</span>
+                                        <h5 class="card-title">La transformation digitale en Côte d'Ivoire</h5>
+                                        <p class="card-text">
+                                            Comment la Côte d'Ivoire devient un hub fintech en Afrique de l'Ouest grâce 
+                                            aux initiatives gouvernementales et aux investissements privés.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 5 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 5 -->
+                        <div class="col-md-6 mb-4" data-category="fintech">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/fintech-trends.jpg" class="card-img-top" alt="Tendances Fintech">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-primary mb-2">Fintech</span>
+                                        <h5 class="card-title">Top 10 des tendances fintech 2024</h5>
+                                        <p class="card-text">
+                                            Découvrez les principales tendances qui vont façonner l'industrie fintech 
+                                            africaine en 2024 : IA, blockchain, super apps et plus encore.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 3 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 6 -->
+                        <div class="col-md-6 mb-4" data-category="mobile-payment">
+                            <article class="card h-100 shadow-sm">
+                                <img src="../assets/images/blog/merchant-adoption.jpg" class="card-img-top" alt="Adoption marchands">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        <span class="badge bg-warning mb-2">Paiement Mobile</span>
+                                        <h5 class="card-title">Stratégies d'adoption pour les marchands</h5>
+                                        <p class="card-text">
+                                            Comment accompagner les commerçants dans l'adoption des solutions de 
+                                            paiement digital pour améliorer leur business.
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> 1 Janvier 2024
+                                            </small>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Pagination blog">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Précédent</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Suivant</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Newsletter -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Newsletter</h5>
+                            <p class="card-text text-muted">
+                                Recevez nos derniers articles et actualités fintech directement dans votre boîte mail.
+                            </p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Votre email" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">S'abonner</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Popular Articles -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Articles populaires</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <img src="../assets/images/blog/thumb-1.jpg" class="rounded me-3" width="80" height="60" style="object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-1"><a href="#" class="text-decoration-none">Guide d'intégration API PayIn</a></h6>
+                                    <small class="text-muted">25 Déc 2023</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="../assets/images/blog/thumb-2.jpg" class="rounded me-3" width="80" height="60" style="object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-1"><a href="#" class="text-decoration-none">Orange Money vs MTN Mobile Money</a></h6>
+                                    <small class="text-muted">20 Déc 2023</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="../assets/images/blog/thumb-3.jpg" class="rounded me-3" width="80" height="60" style="object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-1"><a href="#" class="text-decoration-none">Sécurité des transactions mobiles</a></h6>
+                                    <small class="text-muted">18 Déc 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Tags populaires</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-outline-primary">#fintech</span>
+                                <span class="badge bg-outline-primary">#api</span>
+                                <span class="badge bg-outline-primary">#mobilemoney</span>
+                                <span class="badge bg-outline-primary">#africa</span>
+                                <span class="badge bg-outline-primary">#payments</span>
+                                <span class="badge bg-outline-primary">#security</span>
+                                <span class="badge bg-outline-primary">#integration</span>
+                                <span class="badge bg-outline-primary">#bceao</span>
+                                <span class="badge bg-outline-primary">#innovation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Follow Us -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Suivez-nous</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-info btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <h3 class="text-white mb-3">KAYBIC AFRICA</h3>
+                        <p class="text-white-50 mb-4">
+                            La plateforme d'agrégation de paiement mobile la plus fiable en Afrique francophone. 
+                            Connectez votre entreprise à tous les opérateurs de paiement mobile en une seule intégration.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Produits</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../produits/payin.html" class="text-white-50">PayIn API</a></li>
+                        <li class="mb-2"><a href="../produits/payout.html" class="text-white-50">PayOut API</a></li>
+                        <li class="mb-2"><a href="../produits/transfert.html" class="text-white-50">Transfer API</a></li>
+                        <li class="mb-2"><a href="../produits/solutions.html" class="text-white-50">Solutions</a></li>
+                        <li class="mb-2"><a href="../produits/tarifs.html" class="text-white-50">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Développeurs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../developpeur/overview.html" class="text-white-50">Vue d'ensemble</a></li>
+                        <li class="mb-2"><a href="../developpeur/docs.html" class="text-white-50">Documentation</a></li>
+                        <li class="mb-2"><a href="../developpeur/integrations.html" class="text-white-50">Intégrations</a></li>
+                        <li class="mb-2"><a href="../developpeur/community.html" class="text-white-50">Communauté</a></li>
+                        <li class="mb-2"><a href="../developpeur/status.html" class="text-white-50">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../support/faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="../support/support.html" class="text-white-50">Centre d'aide</a></li>
+                        <li class="mb-2"><a href="../support/help.html" class="text-white-50">Aide</a></li>
+                        <li class="mb-2"><a href="../apropos/about.html" class="text-white-50">À propos</a></li>
+                        <li class="mb-2"><a href="../apropos/contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Restez informé de nos dernières actualités</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        © <span id="currentYear">2025</span> KAYBIC AFRICA. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-white-50 me-3">Conditions d'utilisation</a>
+                    <a href="#" class="text-white-50">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- GLightbox JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <!-- ScrollCue JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/scrollcue@1.1.0/dist/scrollCue.min.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize ScrollCue
+        scrollCue.init();
+        
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

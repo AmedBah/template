@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Guide complet pour les développeurs utilisant les APIs KAYBIC AFRICA. Documentation, exemples de code et ressources techniques.">
+    <meta name="keywords" content="paiement mobile, Afrique, API, mobile money, KAYBIC AFRICA">
+    <meta name="author" content="KAYBIC AFRICA">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#7c3aed">
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7c3aed">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link href="../assets/libs/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    
+    <title>Vue d'ensemble Développeurs | KAYBIC AFRICA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h3 class="text-primary mb-0">KAYBIC AFRICA</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                                <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                                <li><a class="dropdown-item" href="../produits/transfert.html">Transfer API</a></li>
+                                <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                                <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Développeurs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../developpeur/overview.html">Vue d'ensemble</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/docs.html">Documentation</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/integrations.html">Intégrations</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/community.html">Communauté</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/status.html">Statut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../support/faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="../support/support.html">Centre d'aide</a></li>
+                                <li><a class="dropdown-item" href="../support/help.html">Aide</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                À propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../apropos/about.html">À propos</a></li>
+                                <li><a class="dropdown-item" href="../apropos/careers.html">Carrières</a></li>
+                                <li><a class="dropdown-item" href="../apropos/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../apropos/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-outline-primary me-2">Connexion</a>
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <!-- Hero Section -->
+    <section class="py-lg-16 py-10 bg-primary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="text-white">
+                        <h1 class="display-4 fw-bold mb-3">API KAYBIC AFRICA</h1>
+                        <p class="mb-4 lead">
+                            Une API REST moderne et sécurisée pour intégrer facilement les paiements mobiles africains dans vos applications.
+                        </p>
+                        <div class="d-grid d-md-flex gap-2">
+                            <a href="docs.html" class="btn btn-white">Documentation complète</a>
+                            <a href="#quick-start" class="btn btn-outline-white">Démarrage rapide</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="text-center">
+                        <i class="bi bi-code-slash text-white" style="font-size: 8rem; opacity: 0.8;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Overview Section -->
+    <section class="py-lg-12 py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="text-center mb-8">
+                        <h2 class="h1 fw-bold">Vue d'ensemble de l'API</h2>
+                        <p class="mb-0 lead">
+                            Découvrez nos endpoints principaux et commencez à intégrer en quelques minutes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 card-lift">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <i class="bi bi-arrow-down-circle text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h3 class="h4 mb-3">PayIn API</h3>
+                            <p class="text-muted mb-4">
+                                Recevez des paiements depuis tous les portefeuilles mobiles d'Afrique francophone
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light-primary text-primary me-1">Orange Money</span>
+                                <span class="badge bg-light-primary text-primary me-1">MTN MoMo</span>
+                                <span class="badge bg-light-primary text-primary me-1">Moov Money</span>
+                            </div>
+                            <a href="produits/payin.html" class="btn btn-outline-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 card-lift">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <i class="bi bi-arrow-up-circle text-success" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h3 class="h4 mb-3">PayOut API</h3>
+                            <p class="text-muted mb-4">
+                                Effectuez des versements instantanés vers les portefeuilles de vos utilisateurs
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light-success text-success me-1">Temps réel</span>
+                                <span class="badge bg-light-success text-success me-1">Multi-opérateur</span>
+                                <span class="badge bg-light-success text-success me-1">Sécurisé</span>
+                            </div>
+                            <a href="produits/payout.html" class="btn btn-outline-success">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100 card-lift">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <i class="bi bi-globe text-warning" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Transfer API</h3>
+                            <p class="text-muted mb-4">
+                                Gérez les transferts internationaux avec un taux de change compétitif
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light-warning text-warning me-1">International</span>
+                                <span class="badge bg-light-warning text-warning me-1">Taux optimal</span>
+                                <span class="badge bg-light-warning text-warning me-1">Suivi temps réel</span>
+                            </div>
+                            <a href="produits/transfert.html" class="btn btn-outline-warning">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section id="quick-start" class="py-lg-12 py-8 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="text-center mb-8">
+                        <h2 class="h1 fw-bold">Démarrage rapide</h2>
+                        <p class="mb-0 lead">
+                            Intégrez votre première transaction en 3 étapes simples
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-xl bg-primary text-white rounded-circle mb-4 mx-auto">
+                            <span class="h3 mb-0">1</span>
+                        </div>
+                        <h4>Obtenez vos clés API</h4>
+                        <p class="text-muted">
+                            Inscrivez-vous et récupérez vos clés d'authentification sandbox et production
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-xl bg-primary text-white rounded-circle mb-4 mx-auto">
+                            <span class="h3 mb-0">2</span>
+                        </div>
+                        <h4>Testez en sandbox</h4>
+                        <p class="text-muted">
+                            Utilisez notre environnement de test pour valider votre intégration en toute sécurité
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-xl bg-primary text-white rounded-circle mb-4 mx-auto">
+                            <span class="h3 mb-0">3</span>
+                        </div>
+                        <h4>Passez en production</h4>
+                        <p class="text-muted">
+                            Activez votre compte et commencez à traiter de vrais paiements immédiatement
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Example Section -->
+    <section class="py-lg-12 py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="pe-lg-6">
+                        <h2 class="h1 fw-bold mb-4">Exemple d'intégration</h2>
+                        <p class="lead text-muted mb-4">
+                            Voici un exemple simple pour initier un paiement entrant avec notre API REST
+                        </p>
+                        <div class="mb-4">
+                            <h5 class="mb-3">Avantages de notre API :</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Authentification OAuth 2.0 sécurisée
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Réponses JSON standardisées
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Webhooks pour les notifications temps réel
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    SDK disponibles en multiple langages
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="docs.html" class="btn btn-primary">Documentation complète</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="code-block">
+                        <div class="bg-dark rounded p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex">
+                                    <div class="circle circle-red me-1"></div>
+                                    <div class="circle circle-yellow me-1"></div>
+                                    <div class="circle circle-green"></div>
+                                </div>
+                                <span class="text-white-50 ms-3 small">Exemple PHP</span>
+                            </div>
+                            <pre class="text-white mb-0"><code><?php
+// Configuration API
+$api_key = 'your_api_key_here';
+$base_url = 'https://api.kaybic.africa/v1';
+
+// Données de la transaction
+$payment_data = [
+    'amount' => 10000,
+    'currency' => 'XOF',
+    'phone' => '+22570123456',
+    'operator' => 'orange_money',
+    'reference' => 'PAY_' . time(),
+    'description' => 'Achat produit'
+];
+
+// Appel API
+$response = file_get_contents($base_url . '/payin', false, 
+    stream_context_create([
+        'http' => [
+            'method' => 'POST',
+            'header' => [
+                'Authorization: Bearer ' . $api_key,
+                'Content-Type: application/json'
+            ],
+            'content' => json_encode($payment_data)
+        ]
+    ])
+);
+
+$result = json_decode($response, true);
+echo "Statut : " . $result['status'];
+?></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-lg-12 py-8 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="text-center mb-8">
+                        <h2 class="h1 fw-bold">Pourquoi choisir notre API ?</h2>
+                        <p class="mb-0 lead">
+                            Une solution technique moderne et fiable pour vos besoins de paiement
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-primary text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-lightning"></i>
+                        </div>
+                        <h4>Performance optimale</h4>
+                        <p class="text-muted">
+                            Temps de réponse < 2 secondes avec 99.9% de disponibilité garantie
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-success text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Sécurité bancaire</h4>
+                        <p class="text-muted">
+                            Chiffrement SSL, conformité PCI DSS et authentification à deux facteurs
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-warning text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h4>Intégration simple</h4>
+                        <p class="text-muted">
+                            SDK prêts à l'emploi et documentation interactive pour tous les langages
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-info text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4>Évolutivité</h4>
+                        <p class="text-muted">
+                            De 1 à 1 million de transactions par mois, notre infrastructure s'adapte
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-danger text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>Support technique</h4>
+                        <p class="text-muted">
+                            Équipe dédiée disponible 24/7 pour vous accompagner dans vos intégrations
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center mb-6">
+                        <div class="icon-shape icon-lg bg-purple text-white rounded-circle mb-4 mx-auto">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4>Analytics avancées</h4>
+                        <p class="text-muted">
+                            Dashboard temps réel avec métriques détaillées et rapports personnalisés
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDK Section -->
+    <section class="py-lg-12 py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="text-center mb-8">
+                        <h2 class="h1 fw-bold">SDK et outils de développement</h2>
+                        <p class="mb-0 lead">
+                            Accélérez votre développement avec nos outils spécialisés
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center card-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-code-square text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5>SDK PHP</h5>
+                            <p class="text-muted small mb-3">Composer package officiel</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center card-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-braces text-success" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5>SDK Node.js</h5>
+                            <p class="text-muted small mb-3">Package NPM disponible</p>
+                            <a href="#" class="btn btn-outline-success btn-sm">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center card-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-file-code text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5>SDK Python</h5>
+                            <p class="text-muted small mb-3">Package PyPI officiel</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center card-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-terminal text-info" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5>CLI Tools</h5>
+                            <p class="text-muted small mb-3">Outils en ligne de commande</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-lg-12 py-8 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="text-center text-white">
+                        <h2 class="h1 fw-bold mb-3">Prêt à commencer ?</h2>
+                        <p class="mb-5 lead">
+                            Créez votre compte développeur et intégrez votre première transaction en moins de 30 minutes
+                        </p>
+                        <div class="d-grid d-md-flex gap-2 justify-content-md-center">
+                            <a href="#" class="btn btn-white btn-lg">Créer un compte</a>
+                            <a href="docs.html" class="btn btn-outline-white btn-lg">Voir la documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <h3 class="text-white mb-3">KAYBIC AFRICA</h3>
+                        <p class="text-white-50 mb-4">
+                            La plateforme d'agrégation de paiement mobile la plus fiable en Afrique francophone. 
+                            Connectez votre entreprise à tous les opérateurs de paiement mobile en une seule intégration.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Produits</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../produits/payin.html" class="text-white-50">PayIn API</a></li>
+                        <li class="mb-2"><a href="../produits/payout.html" class="text-white-50">PayOut API</a></li>
+                        <li class="mb-2"><a href="../produits/transfert.html" class="text-white-50">Transfer API</a></li>
+                        <li class="mb-2"><a href="../produits/solutions.html" class="text-white-50">Solutions</a></li>
+                        <li class="mb-2"><a href="../produits/tarifs.html" class="text-white-50">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Développeurs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../developpeur/overview.html" class="text-white-50">Vue d'ensemble</a></li>
+                        <li class="mb-2"><a href="../developpeur/docs.html" class="text-white-50">Documentation</a></li>
+                        <li class="mb-2"><a href="../developpeur/integrations.html" class="text-white-50">Intégrations</a></li>
+                        <li class="mb-2"><a href="../developpeur/community.html" class="text-white-50">Communauté</a></li>
+                        <li class="mb-2"><a href="../developpeur/status.html" class="text-white-50">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../support/faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="../support/support.html" class="text-white-50">Centre d'aide</a></li>
+                        <li class="mb-2"><a href="../support/help.html" class="text-white-50">Aide</a></li>
+                        <li class="mb-2"><a href="../apropos/about.html" class="text-white-50">À propos</a></li>
+                        <li class="mb-2"><a href="../apropos/contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Restez informé de nos dernières actualités</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        © <span id="currentYear">2025</span> KAYBIC AFRICA. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-white-50 me-3">Conditions d'utilisation</a>
+                    <a href="#" class="text-white-50">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendors/swiper.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Documentation technique complète des APIs KAYBIC AFRICA avec guides d'intégration, références et exemples de code.">
+    <meta name="keywords" content="paiement mobile, Afrique, API, mobile money, KAYBIC AFRICA">
+    <meta name="author" content="KAYBIC AFRICA">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#7c3aed">
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#db1436">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link href="../assets/libs/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    
+    <title>Documentation | KAYBIC AFRICA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h3 class="text-primary mb-0">KAYBIC AFRICA</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                                <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                                <li><a class="dropdown-item" href="../produits/transfert.html">Transfer API</a></li>
+                                <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                                <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Développeurs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../developpeur/overview.html">Vue d'ensemble</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/docs.html">Documentation</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/integrations.html">Intégrations</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/community.html">Communauté</a></li>
+                                <li><a class="dropdown-item" href="../developpeur/status.html">Statut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../support/faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="../support/support.html">Centre d'aide</a></li>
+                                <li><a class="dropdown-item" href="../support/help.html">Aide</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                À propos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../apropos/about.html">À propos</a></li>
+                                <li><a class="dropdown-item" href="../apropos/careers.html">Carrières</a></li>
+                                <li><a class="dropdown-item" href="../apropos/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../apropos/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-outline-primary me-2">Connexion</a>
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-xl-2 d-none d-lg-block bg-light">
+                <div class="sidebar py-4" style="position: sticky; top: 0; height: 100vh; overflow-y: auto;">
+                    <nav class="nav flex-column">
+                        <h6 class="text-uppercase text-muted fw-bold mb-3 px-3">Commencer</h6>
+                        <a class="nav-link text-dark py-2 px-3" href="#introduction">Introduction</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#authentication">Authentification</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#quick-start">Démarrage Rapide</a>
+                        
+                        <h6 class="text-uppercase text-muted fw-bold mb-3 mt-4 px-3">APIs</h6>
+                        <a class="nav-link text-dark py-2 px-3" href="#payin-api">PayIn API</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#payout-api">PayOut API</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#transfer-api">Transfer API</a>
+                        
+                        <h6 class="text-uppercase text-muted fw-bold mb-3 mt-4 px-3">Webhooks</h6>
+                        <a class="nav-link text-dark py-2 px-3" href="#webhooks">Configuration</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#webhook-events">Événements</a>
+                        
+                        <h6 class="text-uppercase text-muted fw-bold mb-3 mt-4 px-3">Ressources</h6>
+                        <a class="nav-link text-dark py-2 px-3" href="#errors">Codes d'erreur</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#sdks">SDKs</a>
+                        <a class="nav-link text-dark py-2 px-3" href="#testing">Tests</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-9 col-xl-10">
+                <div class="py-4 px-4">
+                    
+                    <!-- Header -->
+                    <div class="mb-8">
+                        <h1 class="display-5 fw-bold mb-3">Documentation API</h1>
+                        <p class="fs-5 text-muted">Guide complet pour intégrer les APIs de paiement mobile KAYBIC AFRICA</p>
+                        
+                        <div class="d-flex gap-3 mt-4">
+                            <span class="badge bg-primary fs-6">Version 2.1</span>
+                            <span class="badge bg-success fs-6">REST API</span>
+                            <span class="badge bg-info fs-6">JSON</span>
+                        </div>
+                    </div>
+
+                    <!-- Introduction -->
+                    <section id="introduction" class="mb-8">
+                        <h2 class="h3 mb-4">Introduction</h2>
+                        <p>L'API KAYBIC AFRICA est une API REST qui vous permet d'intégrer facilement les services de paiement mobile dans vos applications. Notre API prend en charge tous les principaux opérateurs de mobile money en Afrique francophone.</p>
+                        
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-lightning-charge text-primary fs-1 mb-3"></i>
+                                        <h5>Rapide</h5>
+                                        <p class="text-muted">Transactions en temps réel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-shield-check text-success fs-1 mb-3"></i>
+                                        <h5>Sécurisé</h5>
+                                        <p class="text-muted">Chiffrement SSL/TLS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-globe text-info fs-1 mb-3"></i>
+                                        <h5>Étendu</h5>
+                                        <p class="text-muted">15+ pays africains</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h4>URL de base</h4>
+                            <div class="bg-dark text-white p-3 rounded">
+                                <code>https://api.kaybic.africa/v2</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Authentication -->
+                    <section id="authentication" class="mb-8">
+                        <h2 class="h3 mb-4">Authentification</h2>
+                        <p>L'API KAYBIC AFRICA utilise des clés API pour l'authentification. Vous devez inclure votre clé API dans l'en-tête de chaque requête.</p>
+                        
+                        <h4 class="mt-4">En-têtes requis</h4>
+                        <pre class="bg-dark text-white p-3 rounded"><code>Authorization: Bearer YOUR_API_KEY
+Content-Type: application/json
+Accept: application/json</code></pre>
+
+                        <div class="alert alert-warning mt-4">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Important :</strong> Gardez vos clés API secrètes. Ne les exposez jamais dans le code frontend.
+                        </div>
+
+                        <h4 class="mt-5">Environnements</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Environnement</th>
+                                        <th>URL de base</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge bg-warning">Sandbox</span></td>
+                                        <td><code>https://sandbox-api.kaybic.africa/v2</code></td>
+                                        <td>Pour les tests et le développement</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge bg-success">Production</span></td>
+                                        <td><code>https://api.kaybic.africa/v2</code></td>
+                                        <td>Pour les transactions réelles</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Quick Start -->
+                    <section id="quick-start" class="mb-8">
+                        <h2 class="h3 mb-4">Démarrage Rapide</h2>
+                        <p>Voici un exemple simple pour effectuer votre première transaction avec notre API.</p>
+                        
+                        <h4>1. Obtenir vos clés API</h4>
+                        <ol>
+                            <li>Créez un compte sur notre plateforme</li>
+                            <li>Validez votre compte avec les documents KYC</li>
+                            <li>Récupérez vos clés API dans le tableau de bord</li>
+                        </ol>
+
+                        <h4 class="mt-4">2. Faire un appel API</h4>
+                        <p>Exemple d'encaissement avec PayIn API :</p>
+                        
+                        <div class="nav nav-tabs" role="tablist">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#curl-tab">cURL</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#php-tab">PHP</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nodejs-tab">Node.js</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#python-tab">Python</button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="curl-tab">
+                                <pre class="bg-dark text-white p-3 rounded mt-3"><code>curl -X POST https://api.kaybic.africa/v2/payin \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "amount": 1000,
+    "currency": "XOF",
+    "customer_phone": "+225123456789",
+    "provider": "orange_money_ci",
+    "reference": "TXN_123456789"
+  }'</code></pre>
+                            </div>
+                            
+                            <div class="tab-pane" id="php-tab">
+                                <pre class="bg-dark text-white p-3 rounded mt-3"><code><?php
+require_once 'vendor/autoload.php';
+
+use Kaybic\PayIn;
+
+$payin = new PayIn('YOUR_API_KEY');
+
+$response = $payin->create([
+    'amount' => 1000,
+    'currency' => 'XOF',
+    'customer_phone' => '+225123456789',
+    'provider' => 'orange_money_ci',
+    'reference' => 'TXN_123456789'
+]);
+
+echo json_encode($response);
+?></code></pre>
+                            </div>
+                            
+                            <div class="tab-pane" id="nodejs-tab">
+                                <pre class="bg-dark text-white p-3 rounded mt-3"><code>const axios = require('axios');
+
+const response = await axios.post('https://api.kaybic.africa/v2/payin', {
+  amount: 1000,
+  currency: 'XOF',
+  customer_phone: '+225123456789',
+  provider: 'orange_money_ci',
+  reference: 'TXN_123456789'
+}, {
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+});
+
+console.log(response.data);</code></pre>
+                            </div>
+                            
+                            <div class="tab-pane" id="python-tab">
+                                <pre class="bg-dark text-white p-3 rounded mt-3"><code>import requests
+
+url = "https://api.kaybic.africa/v2/payin"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+data = {
+    "amount": 1000,
+    "currency": "XOF",
+    "customer_phone": "+225123456789",
+    "provider": "orange_money_ci",
+    "reference": "TXN_123456789"
+}
+
+response = requests.post(url, headers=headers, json=data)
+print(response.json())</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PayIn API -->
+                    <section id="payin-api" class="mb-8">
+                        <h2 class="h3 mb-4">PayIn API - Encaissement</h2>
+                        <p>L'API PayIn vous permet de collecter des paiements depuis les portefeuilles mobile money de vos clients.</p>
+                        
+                        <h4>Créer une transaction PayIn</h4>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <strong>POST</strong> <code>/payin</code>
+                        </div>
+                        
+                        <h5>Paramètres</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre</th>
+                                        <th>Type</th>
+                                        <th>Requis</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>amount</code></td>
+                                        <td>integer</td>
+                                        <td>Oui</td>
+                                        <td>Montant en centimes (ex: 1000 = 10.00)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>currency</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Code devise ISO (XOF, XAF, GHS, etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>customer_phone</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Numéro de téléphone du client</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>provider</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Opérateur mobile money</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>reference</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Référence unique de transaction</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h5>Réponse</h5>
+                        <pre class="bg-dark text-white p-3 rounded"><code>{
+  "status": "success",
+  "data": {
+    "transaction_id": "txn_1234567890",
+    "reference": "TXN_123456789",
+    "amount": 1000,
+    "currency": "XOF",
+    "status": "pending",
+    "provider": "orange_money_ci",
+    "customer_phone": "+225123456789",
+    "created_at": "2024-01-15T10:30:00Z"
+  }
+}</code></pre>
+                    </section>
+
+                    <!-- PayOut API -->
+                    <section id="payout-api" class="mb-8">
+                        <h2 class="h3 mb-4">PayOut API - Décaissement</h2>
+                        <p>L'API PayOut vous permet d'envoyer de l'argent vers les portefeuilles mobile money de vos bénéficiaires.</p>
+                        
+                        <h4>Créer une transaction PayOut</h4>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <strong>POST</strong> <code>/payout</code>
+                        </div>
+                        
+                        <h5>Paramètres</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre</th>
+                                        <th>Type</th>
+                                        <th>Requis</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>amount</code></td>
+                                        <td>integer</td>
+                                        <td>Oui</td>
+                                        <td>Montant en centimes</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>currency</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Code devise ISO</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>recipient_phone</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Numéro du bénéficiaire</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>provider</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Opérateur mobile money</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>reference</code></td>
+                                        <td>string</td>
+                                        <td>Oui</td>
+                                        <td>Référence unique</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Transfer API -->
+                    <section id="transfer-api" class="mb-8">
+                        <h2 class="h3 mb-4">Transfer API - Transferts Internationaux</h2>
+                        <p>L'API Transfer permet les transferts d'argent entre différents pays africains.</p>
+                        
+                        <h4>Créer un transfert international</h4>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <strong>POST</strong> <code>/transfer</code>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Les transferts internationaux nécessitent une validation KYC renforcée.
+                        </div>
+                    </section>
+
+                    <!-- Webhooks -->
+                    <section id="webhooks" class="mb-8">
+                        <h2 class="h3 mb-4">Webhooks</h2>
+                        <p>Les webhooks vous permettent de recevoir des notifications en temps réel sur le statut de vos transactions.</p>
+                        
+                        <h4>Configuration</h4>
+                        <p>Configurez vos endpoints webhook dans votre tableau de bord. KAYBIC AFRICA enverra une requête POST à votre URL avec les détails de la transaction.</p>
+                        
+                        <h4 id="webhook-events">Événements</h4>
+                        <ul>
+                            <li><code>transaction.completed</code> - Transaction terminée avec succès</li>
+                            <li><code>transaction.failed</code> - Transaction échouée</li>
+                            <li><code>transaction.pending</code> - Transaction en attente</li>
+                        </ul>
+                    </section>
+
+                    <!-- Error Codes -->
+                    <section id="errors" class="mb-8">
+                        <h2 class="h3 mb-4">Codes d'erreur</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Message</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>400</td>
+                                        <td>Bad Request</td>
+                                        <td>Paramètres manquants ou invalides</td>
+                                    </tr>
+                                    <tr>
+                                        <td>401</td>
+                                        <td>Unauthorized</td>
+                                        <td>Clé API invalide ou manquante</td>
+                                    </tr>
+                                    <tr>
+                                        <td>429</td>
+                                        <td>Too Many Requests</td>
+                                        <td>Limite de taux dépassée</td>
+                                    </tr>
+                                    <tr>
+                                        <td>500</td>
+                                        <td>Internal Server Error</td>
+                                        <td>Erreur serveur interne</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- SDKs -->
+                    <section id="sdks" class="mb-8">
+                        <h2 class="h3 mb-4">SDKs et Outils</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-filetype-php me-2"></i>SDK PHP</h5>
+                                        <p class="text-muted">Intégration PHP complète</p>
+                                        <code>composer require kaybic/php-sdk</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-braces me-2"></i>SDK Node.js</h5>
+                                        <p class="text-muted">Package NPM disponible</p>
+                                        <code>npm install kaybic-sdk</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="fab fa-python me-2"></i>SDK Python</h5>
+                                        <p class="text-muted">Bibliothèque Python</p>
+                                        <code>pip install kaybic-python</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-terminal me-2"></i>CLI Tool</h5>
+                                        <p class="text-muted">Outil en ligne de commande</p>
+                                        <code>npm install -g kaybic-cli</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Testing -->
+                    <section id="testing" class="mb-8">
+                        <h2 class="h3 mb-4">Tests</h2>
+                        <p>Utilisez notre environnement sandbox pour tester vos intégrations sans frais.</p>
+                        
+                        <h4>Numéros de test</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Numéro</th>
+                                        <th>Opérateur</th>
+                                        <th>Résultat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>+225123456789</td>
+                                        <td>Orange Money CI</td>
+                                        <td>Succès</td>
+                                    </tr>
+                                    <tr>
+                                        <td>+225987654321</td>
+                                        <td>Orange Money CI</td>
+                                        <td>Échec - Solde insuffisant</td>
+                                    </tr>
+                                    <tr>
+                                        <td>+223123456789</td>
+                                        <td>Orange Money ML</td>
+                                        <td>Succès</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <h3 class="text-white mb-3">KAYBIC AFRICA</h3>
+                        <p class="text-white-50 mb-4">
+                            La plateforme d'agrégation de paiement mobile la plus fiable en Afrique francophone. 
+                            Connectez votre entreprise à tous les opérateurs de paiement mobile en une seule intégration.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon text-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Produits</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../produits/payin.html" class="text-white-50">PayIn API</a></li>
+                        <li class="mb-2"><a href="../produits/payout.html" class="text-white-50">PayOut API</a></li>
+                        <li class="mb-2"><a href="../produits/transfert.html" class="text-white-50">Transfer API</a></li>
+                        <li class="mb-2"><a href="../produits/solutions.html" class="text-white-50">Solutions</a></li>
+                        <li class="mb-2"><a href="../produits/tarifs.html" class="text-white-50">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Développeurs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../developpeur/overview.html" class="text-white-50">Vue d'ensemble</a></li>
+                        <li class="mb-2"><a href="../developpeur/docs.html" class="text-white-50">Documentation</a></li>
+                        <li class="mb-2"><a href="../developpeur/integrations.html" class="text-white-50">Intégrations</a></li>
+                        <li class="mb-2"><a href="../developpeur/community.html" class="text-white-50">Communauté</a></li>
+                        <li class="mb-2"><a href="../developpeur/status.html" class="text-white-50">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../support/faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="../support/support.html" class="text-white-50">Centre d'aide</a></li>
+                        <li class="mb-2"><a href="../support/help.html" class="text-white-50">Aide</a></li>
+                        <li class="mb-2"><a href="../apropos/about.html" class="text-white-50">À propos</a></li>
+                        <li class="mb-2"><a href="../apropos/contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Restez informé de nos dernières actualités</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        © <span id="currentYear">2025</span> KAYBIC AFRICA. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-white-50 me-3">Conditions d'utilisation</a>
+                    <a href="#" class="text-white-50">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendors/swiper.js"></script>
+   
+</body>
+</html>

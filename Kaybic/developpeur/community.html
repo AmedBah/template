@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communauté Développeurs - KAYBIC AFRICA</title>
+    <meta name="description" content="Rejoignez la communauté des développeurs KAYBIC AFRICA. Partagez, apprenez et collaborez avec d'autres développeurs intégrant nos APIs de paiement mobile.">
+    <meta name="keywords" content="communauté développeurs, KAYBIC AFRICA, forum, collaboration, API, paiement mobile, Afrique">
+    <meta name="author" content="KAYBIC AFRICA">
+      <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#7c3aed">
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link href="../assets/libs/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    
+    <!-- Custom CSS -->
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="bi bi-credit-card-2-front me-2"></i>KAYBIC AFRICA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Produits
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                            <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                            <li><a class="dropdown-item" href="../produits/transfert.html">Transfert International</a></li>
+                            <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                            <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Développeurs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="overview.html">Vue d'ensemble</a></li>
+                            <li><a class="dropdown-item" href="docs.html">Documentation</a></li>
+                            <li><a class="dropdown-item" href="integrations.html">Intégrations</a></li>
+                            <li><a class="dropdown-item active" href="community.html">Communauté</a></li>
+                            <li><a class="dropdown-item" href="status.html">Statut API</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Support
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../support/faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="../support/help.html">Centre d'aide</a></li>
+                            <li><a class="dropdown-item" href="../support/support.html">Support Technique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apropos/about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../connexion.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" href="../inscription.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="bi bi-people-fill me-3"></i>Communauté Développeurs KAYBIC
+                    </h1>
+                    <p class="lead mb-4">
+                        Rejoignez une communauté dynamique de développeurs qui construisent l'avenir 
+                        des paiements mobiles en Afrique. Partagez vos expériences, apprenez des autres 
+                        et collaborez sur des projets innovants.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#rejoindre" class="btn btn-warning btn-lg">
+                            <i class="bi bi-plus-circle me-2"></i>Rejoindre la Communauté
+                        </a>
+                        <a href="#forum" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-chat-dots me-2"></i>Visiter le Forum
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="community-stats bg-white bg-opacity-10 rounded-3 p-4">
+                        <h3 class="fw-bold">2,500+</h3>
+                        <p class="mb-2">Développeurs Actifs</p>
+                        <h3 class="fw-bold">150+</h3>
+                        <p class="mb-2">Projets Partagés</p>
+                        <h3 class="fw-bold">50+</h3>
+                        <p class="mb-0">Pays Représentés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Features -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Pourquoi Rejoindre Notre Communauté ?</h2>
+                <p class="lead text-muted">Découvrez les avantages de faire partie de l'écosystème KAYBIC</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-chat-square-dots text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Support Communautaire</h5>
+                            <p class="card-text">
+                                Obtenez de l'aide rapide de la part d'autres développeurs 
+                                expérimentés dans l'intégration des APIs KAYBIC.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-lightbulb text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Partage de Connaissances</h5>
+                            <p class="card-text">
+                                Partagez vos astuces, meilleures pratiques et solutions 
+                                créatives avec la communauté.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-rocket-takeoff text-warning display-4 mb-3"></i>
+                            <h5 class="card-title">Accès Prioritaire</h5>
+                            <p class="card-text">
+                                Soyez les premiers informés des nouvelles fonctionnalités, 
+                                bêta tests et événements exclusifs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-trophy text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Reconnaissance</h5>
+                            <p class="card-text">
+                                Gagnez des badges, participez à des concours et 
+                                obtenez une reconnaissance pour vos contributions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Forum de Discussion</h2>
+                <p class="lead text-muted">Explorez les discussions les plus populaires de notre communauté</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Forum Categories -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-code-slash text-primary fs-1 me-3"></i>
+                                        <div>
+                                            <h5 class="card-title mb-1">Développement & APIs</h5>
+                                            <small class="text-muted">245 discussions • 1,892 messages</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-question-circle text-success fs-1 me-3"></i>
+                                        <div>
+                                            <h5 class="card-title mb-1">Support & Assistance</h5>
+                                            <small class="text-muted">156 discussions • 987 messages</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-share text-warning fs-1 me-3"></i>
+                                        <div>
+                                            <h5 class="card-title mb-1">Showcase & Projets</h5>
+                                            <small class="text-muted">89 discussions • 456 messages</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-megaphone text-info fs-1 me-3"></i>
+                                        <div>
+                                            <h5 class="card-title mb-1">Annonces & News</h5>
+                                            <small class="text-muted">32 discussions • 234 messages</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Discussions -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-clock-history me-2"></i>Discussions Récentes
+                            </h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Optimisation des performances pour les gros volumes</h6>
+                                        <small class="text-muted">Il y a 2h</small>
+                                    </div>
+                                    <p class="mb-1">Comment optimiser les appels API pour traiter plus de 10k transactions/jour ?</p>
+                                    <small class="text-muted">Par <strong>@dev_master</strong> dans Développement & APIs</small>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">12 réponses</span>
+                                        <span class="badge bg-success">Résolu</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Nouvelle intégration e-commerce avec WooCommerce</h6>
+                                        <small class="text-muted">Il y a 4h</small>
+                                    </div>
+                                    <p class="mb-1">Partage de mon plugin WooCommerce pour KAYBIC PayIn API</p>
+                                    <small class="text-muted">Par <strong>@ecom_dev</strong> dans Showcase & Projets</small>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">8 réponses</span>
+                                        <span class="badge bg-warning">Hot</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Gestion d'erreur 422 sur PayOut API</h6>
+                                        <small class="text-muted">Il y a 6h</small>
+                                    </div>
+                                    <p class="mb-1">Je reçois une erreur 422 lors des requêtes PayOut, quelqu'un peut m'aider ?</p>
+                                    <small class="text-muted">Par <strong>@junior_dev</strong> dans Support & Assistance</small>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">15 réponses</span>
+                                        <span class="badge bg-danger">Urgent</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Nouvelle version SDK JavaScript v2.1.0</h6>
+                                        <small class="text-muted">Il y a 1 jour</small>
+                                    </div>
+                                    <p class="mb-1">Annonce de la nouvelle version du SDK avec support des webhooks amélioré</p>
+                                    <small class="text-muted">Par <strong>@kaybic_team</strong> dans Annonces & News</small>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">25 réponses</span>
+                                        <span class="badge bg-info">Officiel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-star-fill me-2"></i>Contributeurs du Mois
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../assets/images/user-1.jpg" alt="User 1" class="rounded-circle me-3" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0">@alex_code</h6>
+                                    <small class="text-muted">127 points</small>
+                                </div>
+                                <i class="bi bi-trophy-fill text-warning ms-auto"></i>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../assets/images/user-2.jpg" alt="User 2" class="rounded-circle me-3" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0">@sarah_dev</h6>
+                                    <small class="text-muted">98 points</small>
+                                </div>
+                                <i class="bi bi-award-fill text-secondary ms-auto"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/images/user-3.jpg" alt="User 3" class="rounded-circle me-3" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0">@mohamed_api</h6>
+                                    <small class="text-muted">85 points</small>
+                                </div>
+                                <i class="bi bi-medal-fill text-danger ms-auto"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-calendar-event me-2"></i>Événements à Venir
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6 class="fw-bold">Webinaire: Intégration Avancée</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>15 Janvier 2024<br>
+                                    <i class="bi bi-clock me-1"></i>14h00 GMT
+                                </small>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="fw-bold">Hackathon FinTech Africa</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>20-22 Janvier 2024<br>
+                                    <i class="bi bi-geo-alt me-1"></i>En ligne
+                                </small>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold">Meetup Développeurs Dakar</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>28 Janvier 2024<br>
+                                    <i class="bi bi-geo-alt me-1"></i>Dakar, Sénégal
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-graph-up me-2"></i>Statistiques
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>Messages aujourd'hui</span>
+                                    <strong>156</strong>
+                                </div>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-success" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>Nouveaux membres</span>
+                                    <strong>23</strong>
+                                </div>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-primary" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Problèmes résolus</span>
+                                    <strong>47</strong>
+                                </div>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-warning" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Ressources Communautaires</h2>
+                <p class="lead text-muted">Outils et ressources créés par et pour la communauté</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-github text-dark fs-1 mb-3"></i>
+                            <h5 class="card-title">Projets Open Source</h5>
+                            <p class="card-text">
+                                Explorez et contribuez aux projets open source développés 
+                                par la communauté.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                <i class="bi bi-github me-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-book text-primary fs-1 mb-3"></i>
+                            <h5 class="card-title">Guides & Tutoriels</h5>
+                            <p class="card-text">
+                                Accédez à une bibliothèque de guides et tutoriels 
+                                créés par des experts.
+                            </p>
+                            <a href="../support/help.html" class="btn btn-outline-primary">
+                                <i class="bi bi-book me-2"></i>Explorer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-puzzle text-success fs-1 mb-3"></i>
+                            <h5 class="card-title">Plugins & Extensions</h5>
+                            <p class="card-text">
+                                Découvrez des plugins et extensions pour faciliter 
+                                vos intégrations.
+                            </p>
+                            <a href="integrations.html" class="btn btn-outline-success">
+                                <i class="bi bi-puzzle me-2"></i>Voir Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Community CTA -->
+    <section id="rejoindre" class="py-5 bg-gradient-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Prêt à Rejoindre la Communauté ?</h2>
+            <p class="lead mb-4">
+                Connectez-vous avec des développeurs passionnés, partagez vos projets et 
+                construisez ensemble l'avenir des paiements mobiles en Afrique.
+            </p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4 mb-3">
+                    <div class="text-center">
+                        <h4 class="fw-bold">Discord</h4>
+                        <p>Chat en temps réel</p>
+                        <a href="#" class="btn btn-outline-light">
+                            <i class="bi bi-discord me-2"></i>Rejoindre
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="text-center">
+                        <h4 class="fw-bold">Forum</h4>
+                        <p>Discussions approfondies</p>
+                        <a href="#" class="btn btn-warning">
+                            <i class="bi bi-chat-dots me-2"></i>Participer
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="text-center">
+                        <h4 class="fw-bold">GitHub</h4>
+                        <p>Contribuer au code</p>
+                        <a href="#" class="btn btn-outline-light">
+                            <i class="bi bi-github me-2"></i>Contribuer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-credit-card-2-front me-2"></i>KAYBIC AFRICA
+                    </h5>
+                    <p class="mb-3">
+                        La plateforme de référence pour les paiements mobiles en Afrique francophone. 
+                        Sécurisé, rapide et accessible à tous.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Produits</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../produits/payin.html" class="text-light-emphasis text-decoration-none">PayIn API</a></li>
+                        <li><a href="../produits/payout.html" class="text-light-emphasis text-decoration-none">PayOut API</a></li>
+                        <li><a href="../produits/transfert.html" class="text-light-emphasis text-decoration-none">Transfert</a></li>
+                        <li><a href="../produits/solutions.html" class="text-light-emphasis text-decoration-none">Solutions</a></li>
+                        <li><a href="../produits/tarifs.html" class="text-light-emphasis text-decoration-none">Tarifs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Développeurs</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="overview.html" class="text-light-emphasis text-decoration-none">Vue d'ensemble</a></li>
+                        <li><a href="docs.html" class="text-light-emphasis text-decoration-none">Documentation</a></li>
+                        <li><a href="integrations.html" class="text-light-emphasis text-decoration-none">Intégrations</a></li>
+                        <li><a href="community.html" class="text-light-emphasis text-decoration-none">Communauté</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../support/faq.html" class="text-light-emphasis text-decoration-none">FAQ</a></li>
+                        <li><a href="../support/help.html" class="text-light-emphasis text-decoration-none">Centre d'aide</a></li>
+                        <li><a href="../support/support.html" class="text-light-emphasis text-decoration-none">Support Technique</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Entreprise</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../apropos/about.html" class="text-light-emphasis text-decoration-none">À Propos</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Carrières</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Actualités</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 KAYBIC AFRICA. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light-emphasis text-decoration-none me-3">Politique de Confidentialité</a>
+                    <a href="#" class="text-light-emphasis text-decoration-none me-3">Conditions d'Utilisation</a>
+                    <a href="#" class="text-light-emphasis text-decoration-none">Mentions Légales</a>
+                </div>
+            </div>
+        </div>    </footer>
+    
+    <!-- Libs JS -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendors/swiper.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre d'Aide - KAYBIC AFRICA</title>
+    <meta name="description" content="Trouvez de l'aide et des ressources pour utiliser efficacement les services KAYBIC AFRICA. Support technique, guides et formation.">
+    <meta name="keywords" content="aide, support, formation, guides, KAYBIC AFRICA, assistance technique">
+    <meta name="author" content="KAYBIC AFRICA">
+      <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#7c3aed">
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css">
+    <link href="../assets/libs/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+  
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="bi bi-credit-card-2-front me-2"></i>KAYBIC AFRICA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Produits
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../produits/payin.html">PayIn API</a></li>
+                            <li><a class="dropdown-item" href="../produits/payout.html">PayOut API</a></li>
+                            <li><a class="dropdown-item" href="../produits/transfert.html">Transfert International</a></li>
+                            <li><a class="dropdown-item" href="../produits/solutions.html">Solutions Métiers</a></li>
+                            <li><a class="dropdown-item" href="../produits/tarifs.html">Tarifs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Développeurs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../developpeur/overview.html">Vue d'ensemble</a></li>
+                            <li><a class="dropdown-item" href="../developpeur/docs.html">Documentation</a></li>
+                            <li><a class="dropdown-item" href="../developpeur/integrations.html">Intégrations</a></li>
+                            <li><a class="dropdown-item" href="../developpeur/community.html">Communauté</a></li>
+                            <li><a class="dropdown-item" href="../developpeur/status.html">Statut API</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Support
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item active" href="help.html">Centre d'aide</a></li>
+                            <li><a class="dropdown-item" href="support.html">Support Technique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apropos/about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../connexion.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" href="../inscription.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="bi bi-life-preserver me-3"></i>Centre d'Aide KAYBIC AFRICA
+                    </h1>
+                    <p class="lead mb-4">
+                        Trouvez rapidement les réponses à vos questions et apprenez à tirer le meilleur parti 
+                        de nos services de paiement mobile.
+                    </p>
+                    <div class="search-box position-relative mb-4">
+                        <input type="text" class="form-control form-control-lg pe-5" placeholder="Rechercher dans l'aide..." id="helpSearch">
+                        <button class="btn btn-warning position-absolute end-0 top-0 h-100 border-0">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Accès Rapide</h2>
+                <p class="lead text-muted">Les ressources les plus consultées</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-rocket-takeoff text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Démarrage Rapide</h5>
+                            <p class="card-text">Guide pour intégrer rapidement nos APIs</p>
+                            <a href="../developpeur/overview.html" class="btn btn-primary">Commencer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-book text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Documentation</h5>
+                            <p class="card-text">Documentation technique complète</p>
+                            <a href="../developpeur/docs.html" class="btn btn-success">Consulter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-question-circle text-warning display-4 mb-3"></i>
+                            <h5 class="card-title">FAQ</h5>
+                            <p class="card-text">Questions fréquemment posées</p>
+                            <a href="faq.html" class="btn btn-warning">Voir FAQ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-headset text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Support</h5>
+                            <p class="card-text">Contacter notre équipe support</p>
+                            <a href="support.html" class="btn btn-info">Contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Catégories d'Aide</h2>
+                <p class="lead text-muted">Explorez nos guides par thématique</p>
+            </div>
+            <div class="row">
+                <!-- Getting Started -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-play-circle me-2"></i>Premiers Pas
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-primary me-2"></i>
+                                        Créer votre compte KAYBIC
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-primary me-2"></i>
+                                        Configuration de votre environnement
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-primary me-2"></i>
+                                        Obtenir vos clés API
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-primary me-2"></i>
+                                        Premier test de transaction
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-puzzle me-2"></i>Intégration
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-success me-2"></i>
+                                        Intégrer PayIn API
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-success me-2"></i>
+                                        Intégrer PayOut API
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-success me-2"></i>
+                                        Configurer les webhooks
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-success me-2"></i>
+                                        Gestion des erreurs
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-shield-check me-2"></i>Sécurité
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-warning me-2"></i>
+                                        Authentification et autorisations
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-warning me-2"></i>
+                                        Bonnes pratiques de sécurité
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-warning me-2"></i>
+                                        Chiffrement des données
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-warning me-2"></i>
+                                        Audit et conformité
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-tools me-2"></i>Dépannage
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-info me-2"></i>
+                                        Résoudre les erreurs courantes
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-info me-2"></i>
+                                        Problèmes de connexion
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-info me-2"></i>
+                                        Transactions échouées
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-arrow-right text-info me-2"></i>
+                                        Outils de diagnostic
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Tutoriels Vidéo</h2>
+                <p class="lead text-muted">Apprenez visuellement avec nos guides vidéo</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="video-thumbnail position-relative">
+                            <img src="../assets/images/video-thumb-1.jpg" alt="Tutoriel PayIn" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="play-button position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-primary rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-play-fill fs-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Intégrer PayIn API en 10 minutes</h5>
+                            <p class="card-text">Guide complet pour intégrer l'API de paiement entrant</p>
+                            <span class="badge bg-primary">15 min</span>
+                            <span class="badge bg-success">Débutant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="video-thumbnail position-relative">
+                            <img src="../assets/images/video-thumb-2.jpg" alt="Tutoriel PayOut" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="play-button position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-primary rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-play-fill fs-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Configuration des Webhooks</h5>
+                            <p class="card-text">Configurer et gérer les notifications en temps réel</p>
+                            <span class="badge bg-primary">12 min</span>
+                            <span class="badge bg-warning">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="video-thumbnail position-relative">
+                            <img src="../assets/images/video-thumb-3.jpg" alt="Tutoriel Sécurité" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="play-button position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-primary rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-play-fill fs-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sécuriser vos Intégrations</h5>
+                            <p class="card-text">Meilleures pratiques de sécurité et authentification</p>
+                            <span class="badge bg-primary">18 min</span>
+                            <span class="badge bg-danger">Avancé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Articles -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-primary">Articles Populaires</h2>
+                <p class="lead text-muted">Les guides les plus consultés par notre communauté</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-star-fill text-warning me-3 mt-1"></i>
+                                <div>
+                                    <h5 class="card-title">Comment tester vos intégrations</h5>
+                                    <p class="card-text">Guide complet pour tester efficacement vos intégrations KAYBIC avant la mise en production.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Mis à jour il y a 2 jours</small>
+                                        <span class="badge bg-success">Très utile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-star-fill text-warning me-3 mt-1"></i>
+                                <div>
+                                    <h5 class="card-title">Gérer les retours de paiement</h5>
+                                    <p class="card-text">Comprendre et gérer efficacement les différents statuts et codes de retour des transactions.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Mis à jour il y a 1 semaine</small>
+                                        <span class="badge bg-primary">Essentiel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-star-fill text-warning me-3 mt-1"></i>
+                                <div>
+                                    <h5 class="card-title">Optimiser les performances</h5>
+                                    <p class="card-text">Techniques pour optimiser les performances de vos intégrations et réduire la latence.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Mis à jour il y a 3 jours</small>
+                                        <span class="badge bg-warning">Avancé</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-star-fill text-warning me-3 mt-1"></i>
+                                <div>
+                                    <h5 class="card-title">Conformité et régulations</h5>
+                                    <p class="card-text">Comprendre les exigences réglementaires et de conformité pour les paiements mobiles en Afrique.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Mis à jour il y a 5 jours</small>
+                                        <span class="badge bg-info">Important</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="py-5 bg-gradient-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Besoin d'aide supplémentaire ?</h2>
+            <p class="lead mb-4">
+                Notre équipe support est là pour vous accompagner dans votre intégration et 
+                répondre à toutes vos questions techniques.
+            </p>
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                <a href="support.html" class="btn btn-warning btn-lg">
+                    <i class="bi bi-headset me-2"></i>Contacter le Support
+                </a>
+                <a href="../developpeur/community.html" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-people me-2"></i>Rejoindre la Communauté
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-credit-card-2-front me-2"></i>KAYBIC AFRICA
+                    </h5>
+                    <p class="mb-3">
+                        La plateforme de référence pour les paiements mobiles en Afrique francophone. 
+                        Sécurisé, rapide et accessible à tous.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Produits</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../produits/payin.html" class="text-light-emphasis text-decoration-none">PayIn API</a></li>
+                        <li><a href="../produits/payout.html" class="text-light-emphasis text-decoration-none">PayOut API</a></li>
+                        <li><a href="../produits/transfert.html" class="text-light-emphasis text-decoration-none">Transfert</a></li>
+                        <li><a href="../produits/solutions.html" class="text-light-emphasis text-decoration-none">Solutions</a></li>
+                        <li><a href="../produits/tarifs.html" class="text-light-emphasis text-decoration-none">Tarifs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Développeurs</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../developpeur/overview.html" class="text-light-emphasis text-decoration-none">Vue d'ensemble</a></li>
+                        <li><a href="../developpeur/docs.html" class="text-light-emphasis text-decoration-none">Documentation</a></li>
+                        <li><a href="../developpeur/integrations.html" class="text-light-emphasis text-decoration-none">Intégrations</a></li>
+                        <li><a href="../developpeur/community.html" class="text-light-emphasis text-decoration-none">Communauté</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-light-emphasis text-decoration-none">FAQ</a></li>
+                        <li><a href="help.html" class="text-light-emphasis text-decoration-none">Centre d'aide</a></li>
+                        <li><a href="support.html" class="text-light-emphasis text-decoration-none">Support Technique</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Entreprise</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../apropos/about.html" class="text-light-emphasis text-decoration-none">À Propos</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Carrières</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Actualités</a></li>
+                        <li><a href="#" class="text-light-emphasis text-decoration-none">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 KAYBIC AFRICA. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light-emphasis text-decoration-none me-3">Politique de Confidentialité</a>
+                    <a href="#" class="text-light-emphasis text-decoration-none me-3">Conditions d'Utilisation</a>
+                    <a href="#" class="text-light-emphasis text-decoration-none">Mentions Légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Libs JS -->
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+
+
+      <!-- Swiper JS -->
+      <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+      <script src="../assets/js/vendors/swiper.js"></script>
+
+
+    <script>
+        // Help search functionality
+        document.getElementById('helpSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // Here you would implement search functionality
+            console.log('Searching for:', searchTerm);
+        });
+    </script>
+</body>
+</html>
+

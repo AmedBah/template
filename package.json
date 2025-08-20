@@ -1,0 +1,50 @@
+{
+  "name": "block-template",
+  "version": "2.0.0",
+  "description": "Complete Bootstrap HTML Template Collection with KAYBIC AFRICA payment platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html",
+    "dev": "live-server --port=3000 --open=index.html --watch=assets/",
+    "build": "echo 'No build process needed - static HTML templates'",
+    "test": "echo 'No tests defined'",
+    "kaybic": "live-server --port=3001 --open=Kaybic/index.html"
+  },
+  "keywords": [
+    "bootstrap",
+    "template", 
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "landing-page",
+    "admin-template",
+    "dashboard",
+    "kaybic",
+    "payment-platform",
+    "africa",
+    "mobile-money"
+  ],
+  "author": "AmedBah",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmedBah/template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmedBah/template/issues"
+  },
+  "homepage": "https://github.com/AmedBah/template#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

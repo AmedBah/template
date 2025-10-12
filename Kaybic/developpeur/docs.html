@@ -131,6 +131,9 @@
                         <a class="nav-link text-dark py-2 px-3" href="#errors">Codes d'erreur</a>
                         <a class="nav-link text-dark py-2 px-3" href="#sdks">SDKs</a>
                         <a class="nav-link text-dark py-2 px-3" href="#testing">Tests</a>
+                        
+                        <h6 class="text-uppercase text-muted fw-bold mb-3 mt-4 px-3">Avancé</h6>
+                        <a class="nav-link text-dark py-2 px-3" href="#experimental-architecture">Architecture Expérimentale</a>
                     </nav>
                 </div>
             </div>
@@ -607,6 +610,277 @@ print(response.json())</code></pre>
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </section>
+
+                    <!-- Experimental Architecture -->
+                    <section id="experimental-architecture" class="mb-8">
+                        <h2 class="h3 mb-4">Architecture Expérimentale</h2>
+                        <div class="alert alert-warning" role="alert">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Note:</strong> Les fonctionnalités présentées dans cette section sont expérimentales et peuvent être modifiées dans les versions futures.
+                        </div>
+                        
+                        <p class="lead">Explorez les architectures avancées et les patterns expérimentaux pour optimiser vos intégrations KAYBIC AFRICA.</p>
+
+                        <!-- Microservices Architecture -->
+                        <h4 class="mt-5 mb-3">1. Architecture Microservices</h4>
+                        <p>Adoptez une architecture microservices pour une meilleure scalabilité et maintenance de vos applications.</p>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-diagram-3 text-primary me-2"></i>Pattern Recommandé</h5>
+                                <p class="card-text">Séparez vos services de paiement en microservices indépendants:</p>
+                                <ul>
+                                    <li><strong>Service d'authentification</strong> : Gestion des clés API et tokens</li>
+                                    <li><strong>Service de transactions</strong> : Traitement des paiements (PayIn/PayOut)</li>
+                                    <li><strong>Service de webhooks</strong> : Gestion des notifications asynchrones</li>
+                                    <li><strong>Service de réconciliation</strong> : Vérification et rapprochement des transactions</li>
+                                </ul>
+                                <div class="bg-light p-3 rounded">
+                                    <code class="text-dark">
+// Exemple d'architecture avec API Gateway<br>
+API Gateway → Auth Service → KAYBIC API<br>
+           → Transaction Service → Queue → Webhook Service<br>
+           → Reconciliation Service → Database
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event-Driven Architecture -->
+                        <h4 class="mt-5 mb-3">2. Architecture Orientée Événements</h4>
+                        <p>Utilisez une approche événementielle pour une meilleure réactivité et découplage de vos systèmes.</p>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-lightning text-warning me-2"></i>Event Streaming</h5>
+                                <p class="card-text">Implémentez un système de streaming d'événements pour traiter les transactions en temps réel:</p>
+                                <ul>
+                                    <li>Publication d'événements pour chaque transaction</li>
+                                    <li>Consommation asynchrone via message queues (RabbitMQ, Kafka)</li>
+                                    <li>Processing en temps réel avec détection d'anomalies</li>
+                                    <li>Replay d'événements pour audit et réconciliation</li>
+                                </ul>
+                                <div class="bg-light p-3 rounded">
+                                    <pre class="mb-0"><code class="text-dark">{
+  "event_type": "payment.completed",
+  "timestamp": "2025-01-15T10:30:00Z",
+  "transaction_id": "PAY_123456",
+  "amount": 10000,
+  "currency": "XOF",
+  "operator": "orange_money",
+  "status": "success"
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Async/Await Patterns -->
+                        <h4 class="mt-5 mb-3">3. Patterns Asynchrones Avancés</h4>
+                        <p>Optimisez les performances avec des patterns asynchrones pour les appels API.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Parallel Processing</h5>
+                                        <p class="text-muted small">Traitez plusieurs transactions simultanément</p>
+                                        <div class="bg-light p-2 rounded">
+                                            <code class="text-dark small">
+Promise.all([<br>
+  processPayment(tx1),<br>
+  processPayment(tx2),<br>
+  processPayment(tx3)<br>
+])
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Circuit Breaker</h5>
+                                        <p class="text-muted small">Protection contre les défaillances en cascade</p>
+                                        <div class="bg-light p-2 rounded">
+                                            <code class="text-dark small">
+if (failureCount > threshold) {<br>
+  return fallbackResponse();<br>
+}
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Caching Strategies -->
+                        <h4 class="mt-5 mb-3">4. Stratégies de Cache Avancées</h4>
+                        <p>Réduisez la latence et améliorez les performances avec une stratégie de cache intelligente.</p>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-database text-success me-2"></i>Multi-Layer Caching</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Niveau</th>
+                                                <th>Technologie</th>
+                                                <th>Utilisation</th>
+                                                <th>TTL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>L1 - Application</td>
+                                                <td>In-Memory</td>
+                                                <td>Clés API, configuration</td>
+                                                <td>5 min</td>
+                                            </tr>
+                                            <tr>
+                                                <td>L2 - Distributed</td>
+                                                <td>Redis</td>
+                                                <td>Statut transactions, rates</td>
+                                                <td>15 min</td>
+                                            </tr>
+                                            <tr>
+                                                <td>L3 - CDN</td>
+                                                <td>CloudFlare</td>
+                                                <td>Assets statiques, docs</td>
+                                                <td>24h</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rate Limiting -->
+                        <h4 class="mt-5 mb-3">5. Rate Limiting Intelligent</h4>
+                        <p>Protégez vos services avec un système de limitation de débit adaptatif.</p>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-speedometer text-info me-2"></i>Algorithmes Supportés</h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6>Token Bucket</h6>
+                                        <p class="small text-muted">Permet des bursts contrôlés</p>
+                                        <span class="badge bg-primary">Recommandé</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Leaky Bucket</h6>
+                                        <p class="small text-muted">Débit constant et prévisible</p>
+                                        <span class="badge bg-secondary">Standard</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sliding Window</h6>
+                                        <p class="small text-muted">Précision temporelle maximale</p>
+                                        <span class="badge bg-info">Expérimental</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="bg-light p-3 rounded mt-3">
+                                    <strong>Configuration recommandée:</strong>
+                                    <ul class="mb-0 mt-2">
+                                        <li>Sandbox: 100 requêtes/minute</li>
+                                        <li>Production: 1000 requêtes/minute</li>
+                                        <li>Burst autorisé: 20% au-dessus de la limite</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Multi-Region Deployment -->
+                        <h4 class="mt-5 mb-3">6. Déploiement Multi-Régions</h4>
+                        <p>Déployez votre infrastructure dans plusieurs régions pour une latence minimale et une haute disponibilité.</p>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-globe text-danger me-2"></i>Architecture Géo-Distribuée</h5>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <h6>Régions KAYBIC API</h6>
+                                        <ul>
+                                            <li>🇸🇳 <strong>Dakar</strong> - Région primaire Afrique de l'Ouest</li>
+                                            <li>🇨🇮 <strong>Abidjan</strong> - Région secondaire</li>
+                                            <li>🇬🇭 <strong>Accra</strong> - Failover automatique</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Routage Intelligent</h6>
+                                        <ul>
+                                            <li>GeoDNS pour routing automatique</li>
+                                            <li>Health checks toutes les 30s</li>
+                                            <li>Failover < 10 secondes</li>
+                                            <li>Load balancing par proximité</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info mt-3 mb-0">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    Utilisez l'endpoint le plus proche pour réduire la latence de 40-60%
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Best Practices -->
+                        <h4 class="mt-5 mb-3">7. Bonnes Pratiques</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 border-success">
+                                    <div class="card-body">
+                                        <h5 class="text-success"><i class="bi bi-check-circle me-2"></i>À Faire</h5>
+                                        <ul class="mb-0">
+                                            <li>Implémenter le retry avec backoff exponentiel</li>
+                                            <li>Logger tous les appels API avec correlation IDs</li>
+                                            <li>Utiliser HTTPS/TLS 1.3 minimum</li>
+                                            <li>Monitorer les métriques en temps réel</li>
+                                            <li>Tester en sandbox avant production</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 border-danger">
+                                    <div class="card-body">
+                                        <h5 class="text-danger"><i class="bi bi-x-circle me-2"></i>À Éviter</h5>
+                                        <ul class="mb-0">
+                                            <li>Retry infini sans délai</li>
+                                            <li>Stockage des clés API en clair</li>
+                                            <li>Appels synchrones pour les webhooks</li>
+                                            <li>Cache des données sensibles</li>
+                                            <li>Ignorer les codes d'erreur HTTP</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resources -->
+                        <div class="card mt-4 bg-light border-0">
+                            <div class="card-body">
+                                <h5><i class="bi bi-book me-2"></i>Ressources Complémentaires</h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-file-code text-primary me-2"></i>Exemples de code
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-journal-text text-success me-2"></i>Blog technique
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-people text-info me-2"></i>Forum communauté
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
